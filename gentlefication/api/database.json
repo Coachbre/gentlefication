@@ -1,0 +1,25 @@
+{
+    "users": [
+        {
+            "name": "bre",
+            "email": "bre@bre.com",
+            "zipcode": 37921,
+            "organization": false,
+            "id": ""
+        }
+    ],
+
+    "councilMembers": [
+        {
+            "name": "Janet Testerman",
+            "image": "",
+            "party": "Nonpartisan",
+            "phone": "865-250-4860",
+            "email": "",
+            "districtId": "",
+            "url": "https://knoxvilletn.gov/cms/one.aspx?portalId=109562&pageId=16247384"
+        }
+    ],
+
+    ""
+}
