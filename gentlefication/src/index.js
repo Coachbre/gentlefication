@@ -6,9 +6,11 @@ import { GentleApp } from './components/gentleApp';
 
 ReactDOM.render(
   <React.StrictMode>
+
     <Router>
       <GentleApp />
     </Router> 
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

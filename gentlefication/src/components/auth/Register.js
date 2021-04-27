@@ -5,7 +5,7 @@ import "./Login.css"
 
 export const Register = () => {
 
-    const [registerUser, setRegisterUser] = useState({ firstName: "", lastName: "", email: "" })
+    const [registerUser, setRegisterUser] = useState({ firstName: "", lastName: "", email: "", zipcode: "" })
     const [conflictDialog, setConflictDialog] = useState(false)
 
     const history = useHistory()
@@ -63,19 +63,38 @@ export const Register = () => {
             </dialog>
 
             <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Please Register for Application Name</h1>
+                <h1 className="h3 mb-3 font-weight-normal">Please Register </h1>
+
                 <fieldset>
                     <label htmlFor="firstName"> First Name </label>
                     <input type="text" name="firstName" id="firstName" className="form-control" placeholder="First name" required autoFocus value={registerUser.firstName} onChange={handleInputChange} />
                 </fieldset>
+
                 <fieldset>
                     <label htmlFor="lastName"> Last Name </label>
                     <input type="text" name="lastName" id="lastName" className="form-control" placeholder="Last name" required value={registerUser.lastName} onChange={handleInputChange} />
                 </fieldset>
+
                 <fieldset>
                     <label htmlFor="inputEmail"> Email address </label>
                     <input type="email" name="email" id="email" className="form-control" placeholder="Email address" required value={registerUser.email} onChange={handleInputChange} />
                 </fieldset>
+
+                <fieldset>
+                    <div> Which type of community asset are you?</div>
+
+                    <label htmlFor="checkbox"> Resident </label>
+                    <input type="checkbox" name="residentCheckbox" id="checkbox" className="form-control" onChange={handleInputChange} />
+
+                    {/* <label htmlFor="checkbox"> Organization </label>
+                    <input type="checkbox" name="OrgCheckbox" id="checkbox" className="form-control" onChange={handleInputChange} /> */}
+                </fieldset>
+
+                <fieldset>
+                    <label htmlFor="inputZipcode"> Zipcode </label>
+                    <input type="zipcode" name="zipcode" id="zipcode" className="form-control" placeholder="Zipcode" required value={registerUser.zipcode} onChange={handleInputChange} />
+                </fieldset>
+
                 <fieldset>
                     <button type="submit"> Sign in </button>
                 </fieldset>
