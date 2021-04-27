@@ -1,205 +1,204 @@
 {
-    "users": [
-        {
-            "name": "bre",
-            "email": "bre@bre.com",
-            "zipcode": 37921,
-            "organization": false,
-            "id": 1
-        },
-        {
-            "name": "urban league as user",
-            "email": "urban@urban.com",
-            "zipcode": null,
-            "organization": true,
-            "id": 2
-        }
-    ],
-
-    "organizations": [
-        {
-            "name": "urban league as org",
-            "description":"serves community",
-            "address":"123 street ave",
-            "website":"github.com",
-            "id":1
-        },
-        {
-            "name": "shelter as org",
-            "description":"serves shelterless community",
-            "address":"456 road blvd",
-            "website":"yahoo.com",
-            "id":2
-        }
-    ],
-
-    "events": [
-        {
-            "name":"community clean up",
-            "date": "1/02/2022",
-            "organizationId": 1,
-            "id": 1
-        },
-        {
-            "name":"b-ball tournament",
-            "date": "2/15/2022",
-            "organizationId": 2,
-            "id": 2
-        }
-    ],
-
-    "savedEvents": [
-        {
-            "userId": 1,
-            "eventId": 1,
-            "id": 1
-        },
-        {
-            "userId": 1,
-            "eventId": 2,
-            "id": 2
-        }
-    ],
-
-    "councilMembers": [
-        {
-            "name": "Tommy Smith",
-            "image": "/images/gentlefication images/smith_tommy.jpg",
-            "party": "Nonpartisan",
-            "phone": "865-567-6211",
-            "email": "tsmith@knoxvilletn.gov",
-            "districtId": 1,
-            "url": "https://www.knoxvilletn.gov/cms/One.aspx?portalId=109562&pageId=16463908",
-            "social": "",
-            "id": 1
-        },
-        {
-            "name": "Andrew Roberto",
-            "image": "",
-            "party": "Nonpartisan",
-            "phone": "865-406-4012",
-            "email": "aroberto@knoxvilletn.gov",
-            "districtId": 2,
-            "url": "https://knoxvilletn.gov/cms/One.aspx?portalId=109562&pageId=11177547",
-            "social": "",
-            "id": 2
-        },
-        {
-            "name": "Seema Singh",
-            "image": "",
-            "party": "Nonpartisan",
-            "phone": "865-368-8391",
-            "email": "ssingh@knoxvilletn.gov",
-            "districtId": 3,
-            "url": "https://knoxvilletn.gov/cms/One.aspx?portalId=109562&pageId=11177622",
-            "social": "",
-            "id": 3
-        },
-        {   
-            "name": "Lauren Rider",
-            "image": "",
-            "party": "Nonpartisan",
-            "phone": "865-964-3905",
-            "email": "lrider@knoxvilletn.gov",
-            "districtId": 4,
-            "url": "https://knoxvilletn.gov/cms/One.aspx?portalId=109562&pageId=11177637",
-            "social": "",
-            "id": 4
-        },
-        {   
-            "name": "Charles Thomas",
-            "image": "",
-            "party": "Nonpartisan",
-            "phone": "865-687-6090",
-            "email": "cathomas@knoxvilletn.gov",
-            "districtId": 5,
-            "url": "https://knoxvilletn.gov/cms/one.aspx?portalId=109562&pageId=16247358",
-            "social": "",
-            "id": 5
-        },
-        {   
-            "name": "Vice Mayor Gwen McKenzie",
-            "image": "",
-            "party": "Nonpartisan",
-            "phone": "865-524-1458",
-            "email": "gmckenzie@knoxvilletn.gov",
-            "districtId": 6,
-            "url": "https://knoxvilletn.gov/cms/One.aspx?portalId=109562&pageId=11177649",
-            "social": "",
-            "id": 6
-        },
-        {   
-            "name": "Lynne Fugate",
-            "image": "",
-            "party": "Nonpartisan",
-            "phone": "865-566-7414",
-            "email": "lfugate@knoxvilletn.gov",
-            "districtId": 7,
-            "url": "https://knoxvilletn.gov/cms/One.aspx?portalId=109562&pageId=11177649",
-            "social": "",
-            "id": 7
-        },
-        {   
-            "name": "Amelia Parker",
-            "image": "",
-            "party": "Nonpartisan",
-            "phone": "865-851-8561",
-            "email": "amparker@knoxvilletn.gov",
-            "districtId": 7,
-            "url": "https://knoxvilletn.gov/cms/one.aspx?portalId=109562&pageId=16247398",
-            "social": "",
-            "id": 8
-        },
-        {
-            "name": "Janet Testerman",
-            "image": "",
-            "party": "Nonpartisan",
-            "phone": "865-250-4860",
-            "email": "jtesterman@knoxvilletn.gov",
-            "districtId": 7,
-            "url": "https://knoxvilletn.gov/cms/one.aspx?portalId=109562&pageId=16247384",
-            "social": "",
-            "id": 9
-        }
-        
-    ],
-
-    "districts": [
-        {
-            "districtName": "1st District",
-            "zipcode": 37921,
-            "id": 1
-        },
-        {
-            "districtName": "2nd District",
-            "zipcode": 37914,
-            "id": 2
-        },
-        {
-            "districtName": "3rd District",
-            "zipcode": 12345,
-            "id": 3
-        },
-        {
-            "districtName": "4th District",
-            "zipcode": 23456,
-            "id": 4
-        },
-        {
-            "districtName": "5th District",
-            "zipcode": 34567,
-            "id": 5
-        },
-        {
-            "districtName": "6th District",
-            "zipcode": 45678,
-            "id": 6
-        },
-        {
-            "districtName": "At Large",
-            "zipcode": null,
-            "id": 7
-        }
-        
-    ]
+  "users": [
+    {
+      "name": "bre",
+      "email": "bre@bre.com",
+      "zipcode": 37921,
+      "organization": false,
+      "id": 1
+    },
+    {
+      "name": "urban league as user",
+      "email": "urban@urban.com",
+      "zipcode": null,
+      "organization": true,
+      "id": 2
+    },
+    {
+      "email": "user2@user.com",
+      "name": "user2 user2",
+      "zipcode": "12345",
+      "id": 4
+    }
+  ],
+  "organizations": [
+    {
+      "name": "urban league as org",
+      "description": "serves community",
+      "address": "123 street ave",
+      "website": "github.com",
+      "id": 1
+    },
+    {
+      "name": "shelter as org",
+      "description": "serves shelterless community",
+      "address": "456 road blvd",
+      "website": "yahoo.com",
+      "id": 2
+    }
+  ],
+  "events": [
+    {
+      "name": "community clean up",
+      "date": "1/02/2022",
+      "organizationId": 1,
+      "id": 1
+    },
+    {
+      "name": "b-ball tournament",
+      "date": "2/15/2022",
+      "organizationId": 2,
+      "id": 2
+    }
+  ],
+  "savedEvents": [
+    {
+      "userId": 1,
+      "eventId": 1,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "eventId": 2,
+      "id": 2
+    }
+  ],
+  "councilMembers": [
+    {
+      "name": "Tommy Smith",
+      "image": "/images/gentlefication images/smith_tommy.jpg",
+      "party": "Nonpartisan",
+      "phone": "865-567-6211",
+      "email": "tsmith@knoxvilletn.gov",
+      "districtId": 1,
+      "url": "https://www.knoxvilletn.gov/cms/One.aspx?portalId=109562&pageId=16463908",
+      "social": "",
+      "id": 1
+    },
+    {
+      "name": "Andrew Roberto",
+      "image": "",
+      "party": "Nonpartisan",
+      "phone": "865-406-4012",
+      "email": "aroberto@knoxvilletn.gov",
+      "districtId": 2,
+      "url": "https://knoxvilletn.gov/cms/One.aspx?portalId=109562&pageId=11177547",
+      "social": "",
+      "id": 2
+    },
+    {
+      "name": "Seema Singh",
+      "image": "",
+      "party": "Nonpartisan",
+      "phone": "865-368-8391",
+      "email": "ssingh@knoxvilletn.gov",
+      "districtId": 3,
+      "url": "https://knoxvilletn.gov/cms/One.aspx?portalId=109562&pageId=11177622",
+      "social": "",
+      "id": 3
+    },
+    {
+      "name": "Lauren Rider",
+      "image": "",
+      "party": "Nonpartisan",
+      "phone": "865-964-3905",
+      "email": "lrider@knoxvilletn.gov",
+      "districtId": 4,
+      "url": "https://knoxvilletn.gov/cms/One.aspx?portalId=109562&pageId=11177637",
+      "social": "",
+      "id": 4
+    },
+    {
+      "name": "Charles Thomas",
+      "image": "",
+      "party": "Nonpartisan",
+      "phone": "865-687-6090",
+      "email": "cathomas@knoxvilletn.gov",
+      "districtId": 5,
+      "url": "https://knoxvilletn.gov/cms/one.aspx?portalId=109562&pageId=16247358",
+      "social": "",
+      "id": 5
+    },
+    {
+      "name": "Vice Mayor Gwen McKenzie",
+      "image": "",
+      "party": "Nonpartisan",
+      "phone": "865-524-1458",
+      "email": "gmckenzie@knoxvilletn.gov",
+      "districtId": 6,
+      "url": "https://knoxvilletn.gov/cms/One.aspx?portalId=109562&pageId=11177649",
+      "social": "",
+      "id": 6
+    },
+    {
+      "name": "Lynne Fugate",
+      "image": "",
+      "party": "Nonpartisan",
+      "phone": "865-566-7414",
+      "email": "lfugate@knoxvilletn.gov",
+      "districtId": 7,
+      "url": "https://knoxvilletn.gov/cms/One.aspx?portalId=109562&pageId=11177649",
+      "social": "",
+      "id": 7
+    },
+    {
+      "name": "Amelia Parker",
+      "image": "",
+      "party": "Nonpartisan",
+      "phone": "865-851-8561",
+      "email": "amparker@knoxvilletn.gov",
+      "districtId": 7,
+      "url": "https://knoxvilletn.gov/cms/one.aspx?portalId=109562&pageId=16247398",
+      "social": "",
+      "id": 8
+    },
+    {
+      "name": "Janet Testerman",
+      "image": "",
+      "party": "Nonpartisan",
+      "phone": "865-250-4860",
+      "email": "jtesterman@knoxvilletn.gov",
+      "districtId": 7,
+      "url": "https://knoxvilletn.gov/cms/one.aspx?portalId=109562&pageId=16247384",
+      "social": "",
+      "id": 9
+    }
+  ],
+  "districts": [
+    {
+      "districtName": "1st District",
+      "zipcode": 37921,
+      "id": 1
+    },
+    {
+      "districtName": "2nd District",
+      "zipcode": 37914,
+      "id": 2
+    },
+    {
+      "districtName": "3rd District",
+      "zipcode": 12345,
+      "id": 3
+    },
+    {
+      "districtName": "4th District",
+      "zipcode": 23456,
+      "id": 4
+    },
+    {
+      "districtName": "5th District",
+      "zipcode": 34567,
+      "id": 5
+    },
+    {
+      "districtName": "6th District",
+      "zipcode": 45678,
+      "id": 6
+    },
+    {
+      "districtName": "At Large",
+      "zipcode": null,
+      "id": 7
+    }
+  ]
 }

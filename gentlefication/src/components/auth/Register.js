@@ -36,7 +36,8 @@ export const Register = () => {
                         },
                         body: JSON.stringify({
                             email: registerUser.email,
-                            name: `${registerUser.firstName} ${registerUser.lastName}`
+                            name: `${registerUser.firstName} ${registerUser.lastName}`,
+                            zipcode: registerUser.zipcode
                         })
                     })
                         .then(res => res.json())
@@ -80,15 +81,15 @@ export const Register = () => {
                     <input type="email" name="email" id="email" className="form-control" placeholder="Email address" required value={registerUser.email} onChange={handleInputChange} />
                 </fieldset>
 
-                <fieldset>
+                {/* <fieldset>
                     <div> Which type of community asset are you?</div>
 
                     <label htmlFor="checkbox"> Resident </label>
                     <input type="checkbox" name="residentCheckbox" id="checkbox" className="form-control" onChange={handleInputChange} />
 
-                    {/* <label htmlFor="checkbox"> Organization </label>
-                    <input type="checkbox" name="OrgCheckbox" id="checkbox" className="form-control" onChange={handleInputChange} /> */}
-                </fieldset>
+                    <label htmlFor="checkbox"> Organization </label>
+                    <input type="checkbox" name="OrgCheckbox" id="checkbox" className="form-control" onChange={handleInputChange} />
+                </fieldset> */}
 
                 <fieldset>
                     <label htmlFor="inputZipcode"> Zipcode </label>
@@ -96,7 +97,7 @@ export const Register = () => {
                 </fieldset>
 
                 <fieldset>
-                    <button type="submit"> Sign in </button>
+                    <button type="submit"> Register and Sign in </button>
                 </fieldset>
             </form>
         </main>
