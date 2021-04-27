@@ -110,24 +110,57 @@
             "name": "Charles Thomas",
             "image": "",
             "party": "Nonpartisan",
-            "phone": "865-964-3905",
-            "email": "lrider@knoxvilletn.gov",
+            "phone": "865-687-6090",
+            "email": "cathomas@knoxvilletn.gov",
             "districtId": 5,
-            "url": "https://knoxvilletn.gov/cms/One.aspx?portalId=109562&pageId=11177637",
+            "url": "https://knoxvilletn.gov/cms/one.aspx?portalId=109562&pageId=16247358",
             "social": "",
             "id": 5
+        },
+        {   
+            "name": "Vice Mayor Gwen McKenzie",
+            "image": "",
+            "party": "Nonpartisan",
+            "phone": "865-524-1458",
+            "email": "gmckenzie@knoxvilletn.gov",
+            "districtId": 6,
+            "url": "https://knoxvilletn.gov/cms/One.aspx?portalId=109562&pageId=11177649",
+            "social": "",
+            "id": 6
+        },
+        {   
+            "name": "Lynne Fugate",
+            "image": "",
+            "party": "Nonpartisan",
+            "phone": "865-566-7414",
+            "email": "lfugate@knoxvilletn.gov",
+            "districtId": 7,
+            "url": "https://knoxvilletn.gov/cms/One.aspx?portalId=109562&pageId=11177649",
+            "social": "",
+            "id": 7
+        },
+        {   
+            "name": "Amelia Parker",
+            "image": "",
+            "party": "Nonpartisan",
+            "phone": "865-851-8561",
+            "email": "amparker@knoxvilletn.gov",
+            "districtId": 7,
+            "url": "https://knoxvilletn.gov/cms/one.aspx?portalId=109562&pageId=16247398",
+            "social": "",
+            "id": 8
         },
         {
             "name": "Janet Testerman",
             "image": "",
             "party": "Nonpartisan",
             "phone": "865-250-4860",
-            "email": "",
+            "email": "jtesterman@knoxvilletn.gov",
             "districtId": 7,
             "url": "https://knoxvilletn.gov/cms/one.aspx?portalId=109562&pageId=16247384",
             "social": "",
-            "id": 7
-        },
+            "id": 9
+        }
         
     ],
 
