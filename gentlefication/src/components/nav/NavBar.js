@@ -19,19 +19,19 @@ export const NavBar = () => {
                 </li>
 
                 <li>
-                    <Link to="/events">
+                    <Link to="/Events">
                         EVENTS
                     </Link>
                 </li>
 
                 <li>
-                    <Link to="/organizations">
+                    <Link to="/Organizations">
                         ORGANIZATIONS
                     </Link>
                 </li>
 
                 <li>
-                    <Link to="/council">
+                    <Link to="/Council">
                         CITY COUNCIL
                     </Link>
                 </li>
