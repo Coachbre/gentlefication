@@ -15,16 +15,10 @@
       "id": 2
     },
     {
-      "email": "user2@user.com",
-      "name": "user2 user2",
-      "zipcode": "12345",
-      "id": 4
-    },
-    {
       "email": "user@user.com",
-      "name": "user smith",
-      "zipcode": "37701",
-      "id": 5
+      "name": "user user",
+      "zipcode": "37921",
+      "id": 3
     }
   ],
   "organizations": [
