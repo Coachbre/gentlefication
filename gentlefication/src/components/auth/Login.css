@@ -1,6 +1,7 @@
-
-
 .logo {
     width: 100%;
     height: auto;
+}
+Button {
+    background-color: #88C3CB !important;
 }
