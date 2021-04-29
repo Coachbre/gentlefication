@@ -23,6 +23,10 @@ export const NavBar = () => {
           <Link className="" to="/council">CITY COUNCIL</Link>
         </li>
 
+        <li className="">
+            LOG OUT
+        </li>
+
       </ul>
     </nav>
   )

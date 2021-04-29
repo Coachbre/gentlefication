@@ -5,9 +5,8 @@ import { Login } from "./auth/Login";
 import { Register } from "./auth/Register";
 
 import { Home } from "./Home";
-import { NavBar } from "./nav/NavBar"
 
-import  SignInSide  from "./auth/SignInSide"
+import  SignIn  from "./auth/SignIn"
 //SignInSide is a default function, and does not require {}
 
 
@@ -30,8 +29,8 @@ export const ApplicationViews = () => {
 
 
         
-        <Route exact path="/SignInSide">
-          <SignInSide />
+        <Route exact path="/SignIn">
+          <SignIn />
         </Route>
   
         
