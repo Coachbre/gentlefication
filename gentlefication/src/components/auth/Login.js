@@ -47,6 +47,7 @@ export const Login = () => {
                 <form className="form--login" onSubmit={handleLogin}>
                     <h1>GentleFication</h1>
                     <h2>Please sign in</h2>
+
                     <fieldset>
                         <label htmlFor="inputEmail"> Email address </label>
                         <input type="email"
@@ -57,6 +58,7 @@ export const Login = () => {
                             value={loginUser.email}
                             onChange={handleInputChange} />
                     </fieldset>
+
                     <fieldset>
                         <button type="submit">
                             Sign in
@@ -65,7 +67,7 @@ export const Login = () => {
                 </form>
             </section>
             <section className="link--register">
-                <Link to="/register">Register for an account</Link>
+                <Link to="/register">Register</Link>
             </section>
         </main>
     )

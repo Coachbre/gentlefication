@@ -4,6 +4,12 @@ import { Route } from "react-router-dom";
 import { Login } from "./auth/Login";
 import { Register } from "./auth/Register";
 
+import { Home } from "./Home";
+import { NavBar } from "./nav/NavBar"
+
+import  SignInSide  from "./auth/SignInSide"
+//SignInSide is a default function, and does not require {}
+
 
 export const ApplicationViews = () => {
     return (
@@ -12,9 +18,20 @@ export const ApplicationViews = () => {
         <Route exact path="/Login">
           <Login />
         </Route>
-  
+
         <Route exact path="/Register">
           <Register />
+        </Route>
+
+        <Route exact path="/">
+          <Home />
+        </Route>
+
+
+
+        
+        <Route exact path="/SignInSide">
+          <SignInSide />
         </Route>
   
         
