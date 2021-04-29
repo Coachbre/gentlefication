@@ -2,8 +2,7 @@ import React, { useState } from "react"
 import { Link, useHistory } from "react-router-dom";
 import { authApi, userStorageKey } from "./authSettings"
 
-
-import Avatar from '@material-ui/core/Avatar';
+import "./Login.css";
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
@@ -12,10 +11,10 @@ import Checkbox from '@material-ui/core/Checkbox';
 // import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import Logo from "../../images/logo.png";
 
 
 
@@ -27,7 +26,7 @@ import Container from '@material-ui/core/Container';
 
 
 export const Login = () => {
-    
+
     const [loginUser, setLoginUser] = useState({ email: "" })
     const [existDialog, setExistDialog] = useState(false)
 
@@ -97,15 +96,14 @@ export const Login = () => {
                 <CssBaseline />
 
                 <div className={classes.paper}>
-                    
-                        <Avatar className={classes.avatar}>
-                            <LockOutlinedIcon />
-                        </Avatar>
-                        <Typography component="h1" variant="h5">
-                            Sign in
+
+                <img className="logo" src={Logo} alt="logo" />
+
+                    <Typography component="h1" variant="h5">
+                        Sign in
                         </Typography>
                     <form className={classes.form} noValidate onSubmit={handleLogin}>
-                  
+
 
 
                         <TextField
@@ -133,9 +131,15 @@ export const Login = () => {
                     </form>
                 </div>
 
-                <section className={"link--register"}>
-                    <Link to="/register">Don't have an account? Sign Up!</Link>
-                </section>
+                <Grid item>
+                    <Link to="/Register" variant="body2">
+                        {"New here? Sign Up!"}
+                    </Link>
+                </Grid>
+
+                <Box mt={8}>
+                    {/* <Copyright /> */}
+                </Box>
 
             </Container>
         </main>
