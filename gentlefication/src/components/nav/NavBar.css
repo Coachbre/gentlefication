@@ -1,19 +1,41 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+
   
   li {
     float: left;
     display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+    text-align:left;
+    padding: 0px 0px 50px 50px;
     text-decoration: none;
   }
 
-.logo {
-    width: auto;
-    height: auto;
+  a {
+      color:black;
+      text-decoration: none;
+      display: block; 
+  }
+
+  a:hover {
+      color: #ffbd59;
+      text-decoration: underline;
+  }
+
+.log-out {
+    float: right;
+    margin-right: 20px;
 }
+
+.navLogo {
+    margin-left: -70px;
+    margin-top: -15px;
+}
+
+.logo {
+    width: 190px;
+    height: 60px;
+}
+
+Link {
+    background-color: darksalmon !important;
+}
+
+
