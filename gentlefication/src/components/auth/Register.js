@@ -1,7 +1,20 @@
 import React, { useState } from "react"
 import { useHistory } from "react-router-dom"
 import { authApi, userStorageKey } from "./authSettings"
-import "./Login.css"
+
+import "./Login.css";
+import Button from '@material-ui/core/Button';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import TextField from '@material-ui/core/TextField';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+// import Link from '@material-ui/core/Link';
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+import Logo from "../../images/logo.png";
 
 export const Register = () => {
 
@@ -17,7 +30,7 @@ export const Register = () => {
     }
 
     const existingUserCheck = () => {
-        
+
         return fetch(`${authApi.localApiBaseUrl}/${authApi.endpoint}?email=${registerUser.email}`)
             .then(res => res.json())
             .then(user => !!user.length)
@@ -55,33 +68,94 @@ export const Register = () => {
 
     }
 
+
+    const useStyles = makeStyles((theme) => ({
+        paper: {
+            marginTop: theme.spacing(8),
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+        },
+        avatar: {
+            margin: theme.spacing(1),
+            backgroundColor: theme.palette.secondary.main,
+        },
+        form: {
+            width: '100%', // Fix IE 11 issue.
+            marginTop: theme.spacing(1),
+        },
+        submit: {
+            margin: theme.spacing(3, 0, 2),
+        },
+    }));
+
+    const classes = useStyles();
+
+
+
     return (
-        <main style={{ textAlign: "center" }}>
+        <main className="container--login">
 
             <dialog className="dialog dialog--password" open={conflictDialog}>
                 <div>Account with that email address already exists</div>
                 <button className="button--close" onClick={e => setConflictDialog(false)}>Close</button>
             </dialog>
 
-            <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Please Register </h1>
+            <Container component="main" maxWidth="xs">
+                <CssBaseline />
+                <div className={classes.paper}>
 
-                <fieldset>
-                    <label htmlFor="firstName"> First Name </label>
-                    <input type="text" name="firstName" id="firstName" className="form-control" placeholder="First name" required autoFocus value={registerUser.firstName} onChange={handleInputChange} />
-                </fieldset>
+                    <img className="logo" src={Logo} alt="logo" />
 
-                <fieldset>
-                    <label htmlFor="lastName"> Last Name </label>
-                    <input type="text" name="lastName" id="lastName" className="form-control" placeholder="Last name" required value={registerUser.lastName} onChange={handleInputChange} />
-                </fieldset>
+                    <form className={classes.form} onSubmit={handleRegister}>
 
-                <fieldset>
-                    <label htmlFor="inputEmail"> Email address </label>
-                    <input type="email" name="email" id="email" className="form-control" placeholder="Email address" required value={registerUser.email} onChange={handleInputChange} />
-                </fieldset>
+                        <Typography component="h1" variant="h5">
+                            Sign Up!
+                    </Typography>
 
-                {/* <fieldset>
+                        <TextField
+                            variant="outlined"
+                            margin="normal"
+                            required
+                            fullWidth
+                            id="firstName"
+                            label="First Name"
+                            name="firstName"
+                            autoComplete="firstName"
+                            autoFocus
+                            value={registerUser.firstName}
+                            onChange={handleInputChange}
+                        />
+
+                        <TextField
+                            variant="outlined"
+                            margin="normal"
+                            required
+                            fullWidth
+                            id="lastName"
+                            label="Last Name"
+                            name="lastName"
+                            autoComplete="lastName"
+                            autoFocus
+                            value={registerUser.lastName}
+                            onChange={handleInputChange}
+                        />
+
+                        <TextField
+                            variant="outlined"
+                            margin="normal"
+                            required
+                            fullWidth
+                            id="email"
+                            label="Email Address"
+                            name="email"
+                            autoComplete="email"
+                            autoFocus
+                            value={registerUser.email}
+                            onChange={handleInputChange}
+                        />
+
+                        {/* <fieldset>
                     <div> Which type of community asset are you?</div>
 
                     <label htmlFor="checkbox"> Resident </label>
@@ -89,17 +163,36 @@ export const Register = () => {
 
                     <label htmlFor="checkbox"> Organization </label>
                     <input type="checkbox" name="OrgCheckbox" id="checkbox" className="form-control" onChange={handleInputChange} />
-                </fieldset> */}
+                    </fieldset> */}
 
-                <fieldset>
-                    <label htmlFor="inputZipcode"> Zipcode </label>
-                    <input type="zipcode" name="zipcode" id="zipcode" className="form-control" placeholder="Zipcode" required value={registerUser.zipcode} onChange={handleInputChange} />
-                </fieldset>
+                        <TextField
+                            variant="outlined"
+                            margin="normal"
+                            required
+                            fullWidth
+                            id="zipcode"
+                            label="Zipcode"
+                            name="zipcode"
+                            autoComplete="zipcode"
+                            value={registerUser.zipcode}
+                            onChange={handleInputChange}
+                        />
 
-                <fieldset>
-                    <button type="submit"> Register and Sign in </button>
-                </fieldset>
-            </form>
+                        <Grid item>
+
+                            <Button type="submit"
+                                fullWidth
+                                variant="contained"
+                                color="primary"
+                                className={classes.submit}>
+                                Register and Login
+                            </Button>
+
+                        </Grid>
+
+                    </form>
+                </div>
+            </Container>
         </main>
     )
 }

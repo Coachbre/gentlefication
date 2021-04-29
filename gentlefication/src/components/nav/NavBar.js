@@ -1,14 +1,19 @@
-import React from "react"
-import { Link } from "react-router-dom"
+import React from "react";
+import { Link } from "react-router-dom";
+import "./NavBar.css";
+import Logo from "../../images/logo.png";
 
 export const NavBar = () => {
   return (
+      <>
+    
     <nav>
 
-      <ul>
 
         <li className="">
-          <Link className="" to="/">HOME</Link>
+          <Link className="" to="/">
+          <img className="logo" src={Logo} alt="logo" />
+          </Link>
         </li>
 
         <li className="">
@@ -27,7 +32,10 @@ export const NavBar = () => {
             LOG OUT
         </li>
 
-      </ul>
+ 
     </nav>
+ 
+    </>
+    
   )
 }

@@ -1,6 +1,6 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import { authApi, userStorageKey } from "./authSettings"
+import { authApi, userStorageKey } from "./authSettings";
 
 import "./Login.css";
 import Button from '@material-ui/core/Button';
@@ -101,10 +101,9 @@ export const Login = () => {
 
                     <Typography component="h1" variant="h5">
                         Sign in
-                        </Typography>
+                    </Typography>
+
                     <form className={classes.form} noValidate onSubmit={handleLogin}>
-
-
 
                         <TextField
                             variant="outlined"
