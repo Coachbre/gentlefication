@@ -1,7 +1,7 @@
 import React from "react"
 import { Route, Redirect } from "react-router-dom"
 import { ApplicationViews } from "./ApplicationViews"
-// import { NavBar } from "./nav/NavBar"
+import { NavBar } from "./nav/NavBar"
 import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
 
@@ -12,13 +12,13 @@ export const GentleApp = () => (
         if (sessionStorage.getItem("gentle_user")) {
           return (
             <>
-              {/* <NavBar /> */}
+              <NavBar />
               <ApplicationViews />
             </>
           )
-          //if user input is recognized, render full page view
+          //if a user is already logged in, render full page view
         } else {
-          return <Redirect to="/login" />;
+          return <Redirect to="/login"/>;
         }
         // if not, show 'login' view
       }}
