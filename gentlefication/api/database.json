@@ -19,6 +19,12 @@
       "name": "user user",
       "zipcode": "37921",
       "id": 3
+    },
+    {
+      "email": "shannon@shannon.com",
+      "name": "shannon coach",
+      "zipcode": "37921",
+      "id": 4
     }
   ],
   "organizations": [
@@ -39,16 +45,20 @@
   ],
   "events": [
     {
-      "name": "community clean up",
-      "date": "1/02/2022",
-      "organizationId": 1,
-      "id": 1
-    },
-    {
       "name": "b-ball tournament",
       "date": "2/15/2022",
+      "time": "15:00",
       "organizationId": 2,
+      "description": "3 on 3 championship game",
       "id": 2
+    },
+    {
+      "name": "Community Clean-up",
+      "date": "1/02/2022",
+      "time": "17:00",
+      "organizationId": 1,
+      "description": "This event takes place annually. The goal is to foster a sense of community among all neighbors regardless of their differences",
+      "id": 3
     }
   ],
   "savedEvents": [

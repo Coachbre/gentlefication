@@ -12,8 +12,12 @@ export const GentleApp = () => (
         if (sessionStorage.getItem("gentle_user")) {
           return (
             <>
+            <div>
               <NavBar />
+              </div>
+              <div>
               <ApplicationViews />
+              </div>
             </>
           )
           //if a user is already logged in, render full page view
