@@ -7,43 +7,39 @@ import Logo from "../../images/logo.png";
 
 export const NavBar = () => {
     return (
-        <>
+          <nav className="navBar">
 
-            <nav>
+                <ul>
+                    <li className="nav-item">
+                        <Link to="/">
+                            <img className="navLogo" src={Logo} alt="logo" />
+                        </Link>
+                    </li>
 
-<ul>
-                <li className="navLogo">
-                    <Link to="/">
-                        <img className="logo" src={Logo} alt="logo" />
+                    <li className="nav-item">
+                        <Link to="/Events">
+                            EVENTS
                     </Link>
-                </li>
+                    </li>
 
-                <li>
-                    <Link to="/Events">
-                        EVENTS
+                    <li className="nav-item">
+                        <Link to="/Organizations">
+                            ORGANIZATIONS
                     </Link>
-                </li>
+                    </li>
 
-                <li>
-                    <Link to="/Organizations">
-                        ORGANIZATIONS
+                    <li className="nav-item">
+                        <Link to="/Council">
+                            CITY COUNCIL
                     </Link>
-                </li>
+                    </li>
 
-                <li>
-                    <Link to="/Council">
-                        CITY COUNCIL
-                    </Link>
-                </li>
-
-                <li className="log-out">
-                    LOG OUT
-                </li>
-</ul>
-
+                    <li className="log-out">
+                        LOG OUT
+                    </li>
+                </ul>
+     
             </nav>
-
-        </>
 
     )
 }

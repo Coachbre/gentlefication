@@ -1,6 +1,7 @@
-.header {
+.eventListHeader {
     background-color: red;
-
+    margin: 0px;
+    margin-bottom: 20px;
 }
 
 .saveButton {

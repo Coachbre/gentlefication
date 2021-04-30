@@ -26,6 +26,7 @@ export const ApplicationViews = () => {
         </Route>
 
         <Route exact path="/Events">
+      
           <Events />
         </Route>
 

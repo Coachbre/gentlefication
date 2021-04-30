@@ -31,7 +31,7 @@ export const Events = () => {
 
         //initially runs with an empty array, then ^^ useEffect() runs after
         <div>
-            <h1 className="header">Events list</h1>
+            <h1 className="eventListHeader">Events list</h1>
             <div>
                 {events.map(eventObj => {
                     //iterates over the array of events
