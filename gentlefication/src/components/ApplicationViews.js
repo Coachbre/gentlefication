@@ -1,14 +1,13 @@
 //ApplicationViews file contains each view needed for full functionality of the app
 import React from "react";
 import { Route } from "react-router-dom";
+
 import { Login } from "./auth/Login";
 import { Register } from "./auth/Register";
 
 import { Home } from "./Home";
 
-import  SignIn  from "./auth/SignIn"
-//SignInSide is a default function, and does not require {}
-
+import { Events } from "./events/Events";
 
 export const ApplicationViews = () => {
     return (
@@ -26,14 +25,12 @@ export const ApplicationViews = () => {
           <Home />
         </Route>
 
-
-
-        
-        <Route exact path="/SignIn">
-          <SignIn />
+        <Route exact path="/Events">
+      
+          <Events />
         </Route>
-  
-        
+
+
       </>
     )
   }
