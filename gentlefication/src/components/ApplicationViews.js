@@ -10,6 +10,8 @@ import { Home } from "./Home";
 import { Events } from "./events/Events";
 import { SavedEvents } from "./events/SavedEvents";
 
+import { Orgs } from "./organizations/OrgList";
+
 export const ApplicationViews = () => {
     return (
       <>
@@ -32,6 +34,14 @@ export const ApplicationViews = () => {
             <SavedEvents />
           </aside>
         </Route>
+
+        <Route exact path="/Organizations">
+          <Orgs />
+          <aside>
+            <Events />
+          </aside>
+        </Route>
+
 
 
       </>

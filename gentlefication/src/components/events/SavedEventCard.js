@@ -11,7 +11,7 @@ export const SavedEventCard = ({savedEvent}) => (
         <div>Organized by: {savedEvent.OrganizationId} 'organization name'</div>
         <div className="eventTime"> {savedEvent.date}'date' at {savedEvent.time}'time'</div>
         <div className="eventDes"> description {savedEvent.description}</div>
-        <div className="savedNotes"> 'notes' {savedEvent.description}</div>
+        <div className="savedNotes"> NOTES: {savedEvent.notes}</div>
         <button className="saveButton" type="button">Add Notes</button>
         <button className="deleteButton" type="button">Remove Event</button>
   

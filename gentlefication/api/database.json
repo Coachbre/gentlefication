@@ -17,35 +17,37 @@
     {
       "email": "user@user.com",
       "name": "user user",
-      "zipcode": "37921",
+      "zipcode": "37919",
       "id": 3
     },
     {
       "email": "shannon@shannon.com",
       "name": "shannon coach",
-      "zipcode": "37921",
+      "zipcode": "37923",
       "id": 4
     }
   ],
   "organizations": [
     {
-      "name": "urban league as org",
-      "description": "serves community",
-      "address": "123 street ave",
-      "website": "github.com",
+      "name": "Knoxville Area Urban League",
+      "description": "The Knoxville Area Urban League, an affiliate of the National Urban League, is dedicated to empowering communities and changing lives. Our mission is to enable African Americans, other minority groups and the underserved to secure economic self-reliance, parity, power and civil rights.",
+      "address": "1514 E. Fifth Ave., Knoxville, TN",
+      "phone": "865-524-5511",
+      "website": "thekaul.com",
       "id": 1
     },
     {
       "name": "shelter as org",
       "description": "serves shelterless community",
       "address": "456 road blvd",
+      "phone": "865-250-7770",
       "website": "yahoo.com",
       "id": 2
     }
   ],
   "events": [
     {
-      "name": "b-ball tournament",
+      "name": "Basketball Tournament",
       "date": "5/15/2021",
       "time": "15:00",
       "organizationId": 2,
