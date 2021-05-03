@@ -30,12 +30,13 @@ export const Events = () => {
     return (
 
         //initially runs with an empty array, then ^^ useEffect() runs after
-        <div>
+        <div className="eventList">
             <h1 className="eventListHeader">Events list</h1>
-            <div>
+            <div className="eventCard">
                 {events.map(eventObj => {
                     //iterates over the array of events
                     return (
+             
                         <ul>
                             <EventCard
                             key={eventObj.id}
@@ -44,9 +45,11 @@ export const Events = () => {
                             // eventObj (each event in the array) is now equal to 'event' (prop passed into EventCard)
                             />
                         </ul>
+                    
                     )
                 })}
             </div>
+    
         </div>
     );
 };

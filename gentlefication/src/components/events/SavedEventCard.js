@@ -17,3 +17,12 @@ export const SavedEventCard = ({savedEvent}) => (
   
     </section>
 )
+
+//preview card of saved events that goes into aside on main events view
+export const SavedEventPreview = ({savedEvent}) => (
+    <section>
+        <h2 className="name">{savedEvent.name}'event name' </h2>
+        <div className="eventTime"> {savedEvent.date}'date' at {savedEvent.time}'time'</div>
+        <button className="deleteButton" type="button">Remove Event</button>
+    </section>
+)
