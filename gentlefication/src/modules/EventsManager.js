@@ -8,3 +8,8 @@ export const getAllEvents = () => {
     .then(result => result.json())
     //waits for response, then parses into json data 
 }
+
+export const getAllSaved = () => {
+    return fetch(`${remoteURL}/savedEvents`)
+    .then(result => result.json())
+}

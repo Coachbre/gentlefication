@@ -1,7 +1,8 @@
 
   .navBar {
         height: 100px;
-        background-color: cornflowerblue;
+
+        border-style: dotted;
         margin: 0px;
  
 

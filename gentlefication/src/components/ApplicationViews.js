@@ -8,6 +8,7 @@ import { Register } from "./auth/Register";
 import { Home } from "./Home";
 
 import { Events } from "./events/Events";
+import { SavedEvents } from "./events/SavedEvents";
 
 export const ApplicationViews = () => {
     return (
@@ -26,8 +27,10 @@ export const ApplicationViews = () => {
         </Route>
 
         <Route exact path="/Events">
-      
           <Events />
+          <aside>
+            <SavedEvents />
+          </aside>
         </Route>
 
 

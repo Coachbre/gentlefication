@@ -1,14 +1,28 @@
 .eventListHeader {
-    background-color: red;
+    border-style: solid;
     margin: 0px;
     margin-bottom: 20px;
+
 }
 
-.saveButton {
+.eventList, .eventCard {
+    
+}
+
+.saveButton, .deleteButton {
     float: right;
 }
 
 section {
     border: solid;
+    
 }
+
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    background-color: lightgray;
+  }
 
