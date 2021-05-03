@@ -10,7 +10,7 @@ export const OrgCard = ({ org }) => (
 
         <h2 className="orgName">{org.name} </h2>
         <div className="orgDes"> {org.description}</div>
-        <div className="contactInfo">
+        <div className="orgContact">
             <h3>CONTACT INFORMATION</h3>
             <div className="orgAddress"> {org.address}</div>
             <div className="orgPhone"> {org.phone}</div>
