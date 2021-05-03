@@ -27,7 +27,7 @@ export const SavedEvents = () => {
     return (
 
         <div>
-            <h1 className="eventListHeader">Saved Events</h1>
+            <h1 className="eventListHeader">SAVED EVENTS</h1>
             <div>
                 {savedEvents.map(savedEventObj => {
                     //iterates over the array of saved events
