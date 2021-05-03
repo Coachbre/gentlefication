@@ -1,4 +1,4 @@
-// populates full events list
+// iterates over and populates full events list
 
 import { React, useEffect, useState } from 'react';
 import { getAllEvents } from '../../modules/EventsManager';

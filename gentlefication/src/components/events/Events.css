@@ -1,10 +1,11 @@
 .eventListHeader {
-    background-color: red;
+    border-style: solid;
     margin: 0px;
     margin-bottom: 20px;
+
 }
 
-.saveButton {
+.saveButton, .deleteButton {
     float: right;
 }
 
