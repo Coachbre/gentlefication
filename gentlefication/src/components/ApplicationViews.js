@@ -12,6 +12,8 @@ import { SavedEvents } from "./events/SavedEvents";
 
 import { Orgs } from "./organizations/OrgList";
 
+import { Council } from "./council/Council";
+
 export const ApplicationViews = () => {
     return (
       <>
@@ -40,6 +42,10 @@ export const ApplicationViews = () => {
           <aside>
             <Events />
           </aside>
+        </Route>
+
+        <Route exact path="/Council">
+          <Council />
         </Route>
 
 
