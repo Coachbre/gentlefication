@@ -1,17 +1,15 @@
-// iterates over and populates user's saved events list
-
 import { React, useEffect, useState } from 'react';
 import { getSavedInfo } from '../../modules/EventsManager';
-import { SavedEventCard } from './SavedEventCard';
+import { SavedPreview } from './SavedEventCard';
 import './Events.css';
 
 
-export const SavedEvents = () => {
+export const SavedEventPreview = () => {
 
 
     const [savedEvents, setSavedEvents] = useState([]);
     //savedEvents is current value, setSavedEvents changes value
-    const getSavedEvents = () => {
+    const getSavedPreview = () => {
         
         // returns saved events array from json
         return getSavedInfo()
@@ -24,19 +22,19 @@ export const SavedEvents = () => {
 
     useEffect(() => {
         //calls the getSavedEvents function
-        getSavedEvents();
+        getSavedPreview();
     }, []);
     //returns empty array on first run
     return (
 
         <div>
-            <h1 className="eventListHeader">YOUR UPCOMING ACTIVITIES</h1>
+            <h1 className="eventListHeader">YOUR UPCOMING EVENTS</h1>
             <div>
                 {savedEvents.map(savedEventObj => {
                     //iterates over the array of saved events
                     return (
                         <ul>
-                            <SavedEventCard
+                            <SavedPreview
                             key={savedEventObj.id}
                             //unique key used by react (not required, but good convention)
                        

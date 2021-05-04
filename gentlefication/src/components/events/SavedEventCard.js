@@ -4,13 +4,14 @@ import React from 'react';
 import './Events.css';
 
 export const SavedEventCard = ({savedEvent}) => (
-// 'event' is a prop being passed in from EventsList() LAST return
+// 'savedEvent' is a prop being passed in from EventsList() LAST return
     <section>
         
-        <h2 className="name">{savedEvent.name}'event name' </h2>
-        <div>Organized by: {savedEvent.OrganizationId} 'organization name'</div>
-        <div className="eventTime"> {savedEvent.date}'date' at {savedEvent.time}'time'</div>
-        <div className="eventDes"> description {savedEvent.description}</div>
+        <h2 className="name">{savedEvent.event.name}</h2>
+        <div>Organized by: {savedEvent.event.organization}</div>
+        <div className="eventTime"> TIME: {savedEvent.event.date} at {savedEvent.event.time}</div>
+        <div className="eventLocation"> LOCATION: {savedEvent.event.location}</div>
+        <div className="eventDes">{savedEvent.event.description}</div>
         <div className="savedNotes"> NOTES: {savedEvent.notes}</div>
         <button className="saveButton" type="button">Add Notes</button>
         <button className="deleteButton" type="button">Remove Event</button>
@@ -19,10 +20,11 @@ export const SavedEventCard = ({savedEvent}) => (
 )
 
 //preview card of saved events that goes into aside on main events view
-export const SavedEventPreview = ({savedEvent}) => (
+export const SavedPreview = ({savedEvent}) => (
     <section>
-        <h2 className="name">{savedEvent.name}'event name' </h2>
-        <div className="eventTime"> {savedEvent.date}'date' at {savedEvent.time}'time'</div>
+        <h2 className="name">{savedEvent.event.name} </h2>
+        <div className="eventTime"> TIME: {savedEvent.event.date} at {savedEvent.event.time}</div>
+        <div className="eventLocation"> LOCATION: {savedEvent.event.location}</div>
         <button className="deleteButton" type="button">Remove Event</button>
     </section>
 )
