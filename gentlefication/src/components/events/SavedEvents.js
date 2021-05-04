@@ -1,17 +1,21 @@
 // iterates over and populates user's saved events list
 
 import { React, useEffect, useState } from 'react';
-import { getAllSaved } from '../../modules/EventsManager';
+import { getSavedInfo } from '../../modules/EventsManager';
 import { SavedEventCard } from './SavedEventCard';
+import { Events } from './Events';
 import './Events.css';
 
+
 export const SavedEvents = () => {
+
 
     const [savedEvents, setSavedEvents] = useState([]);
     //savedEvents is current value, setSavedEvents changes value
     const getSavedEvents = () => {
+        
         // returns saved events array from json
-        return getAllSaved()
+        return getSavedInfo()
         //fetches json data
         .then((savedEventsFromAPI) => {
             setSavedEvents(savedEventsFromAPI)
@@ -36,6 +40,7 @@ export const SavedEvents = () => {
                             <SavedEventCard
                             key={savedEventObj.id}
                             //unique key used by react (not required, but good convention)
+                        Event={Event}
                             savedEvent={savedEventObj}
                             // savedEventObj (each saved event in the array) is now equal to 'savedEvent' (prop passed into SavedEventCard)
                             />

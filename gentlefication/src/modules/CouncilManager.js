@@ -13,4 +13,5 @@ export const getCouncilDistricts= () => {
     return fetch(`${remoteURL}/councilMembers?_expand=district`)
     .then(result => result.json())
     //waits for response, then parses into json data
+    //expand pulls district ID from council array
 }
