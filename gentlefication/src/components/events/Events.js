@@ -1,7 +1,7 @@
 // iterates over and populates full events list
 
 import { React, useEffect, useState } from 'react';
-import { getAllEvents } from '../../modules/EventsManager';
+import { getEventOrg } from '../../modules/EventsManager';
 import { EventCard } from './EventCard';
 import './Events.css';
 
@@ -11,8 +11,8 @@ export const Events = () => {
     //'events' is always the current value, 'setEvents' is used to change it, and 'useState' is the initial value
     const getEvents = () => {
         // getEvents() ultimately returns events array from json
-        return getAllEvents()
-            // getAllEvents() fetches json info
+        return getEventOrg()
+            //fetches json info
             .then((eventsFromAPI /*taco*/) => {
                 setEvents(eventsFromAPI)
                 // waits for response then sets 'events' variable equal to the API data

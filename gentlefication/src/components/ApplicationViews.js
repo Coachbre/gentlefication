@@ -9,6 +9,7 @@ import { Home } from "./Home";
 
 import { Events } from "./events/Events";
 import { SavedEvents } from "./events/SavedEvents";
+import { SavedEventPreview } from "./events/SavedEventsPreview";
 
 import { Orgs } from "./organizations/OrgList";
 
@@ -33,7 +34,7 @@ export const ApplicationViews = () => {
         <Route exact path="/Events">
           <Events />
           <aside>
-            <SavedEvents />
+            <SavedEventPreview />
           </aside>
         </Route>
 

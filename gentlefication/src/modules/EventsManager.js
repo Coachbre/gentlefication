@@ -21,6 +21,6 @@ export const getAllSaved = () => {
 }
 
 export const getSavedInfo = () => {
-    return fetch(`${remoteURL}/savedEvents/?_expand=event&_expand=user`)
+    return fetch(`${remoteURL}/savedEvents/?_expand=event&_expand=user&_embed=organization`)
     .then(result => result.json())
 }
