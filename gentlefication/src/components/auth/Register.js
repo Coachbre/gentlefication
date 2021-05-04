@@ -50,7 +50,8 @@ export const Register = () => {
                         body: JSON.stringify({
                             email: registerUser.email,
                             name: `${registerUser.firstName} ${registerUser.lastName}`,
-                            zipcode: registerUser.zipcode
+                            zipcode: parseInt(registerUser.zipcode)
+                            //takes user input (zipcode as a string) and adds as an integer to json data
                         })
                     })
                         .then(res => res.json())
@@ -180,7 +181,7 @@ export const Register = () => {
                                 fullWidth
                                 variant="contained"
                                 className={classes.submit}>
-                                Register and Login
+                                Register & Login
                             </Button>
 
                         </Grid>
