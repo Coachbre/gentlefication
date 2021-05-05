@@ -33,7 +33,7 @@ export const NavBar = () => {
 
                 <li className="nav-item">
                     <Link to="/Organizations">
-                        ORGANIZATIONS
+                        COMMUNITY RESOURCES
                     </Link>
                 </li>
 

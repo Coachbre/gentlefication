@@ -17,6 +17,7 @@
   "organizations": [
     {
       "name": "Knoxville Area Urban League",
+      "logo":"",
       "description": "The Knoxville Area Urban League, an affiliate of the National Urban League, is dedicated to empowering communities and changing lives. Our mission is to enable African Americans, other minority groups and the underserved to secure economic self-reliance, parity, power and civil rights.",
       "address": "1514 E. Fifth Ave., Knoxville, TN",
       "phone": "865-524-5511",
@@ -25,6 +26,7 @@
     },
     {
       "name": "shelter as org",
+      "logo":"",
       "description": "serves shelterless community",
       "address": "456 road blvd",
       "phone": "865-250-7770",
@@ -83,7 +85,7 @@
     },
     {
       "name": "Andrew Roberto",
-      "image": "",
+      "image": "../../images/council/roberto_headshot.jpg",
       "party": "Nonpartisan",
       "phone": "865-406-4012",
       "email": "aroberto@knoxvilletn.gov",

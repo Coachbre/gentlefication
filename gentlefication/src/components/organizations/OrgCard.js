@@ -7,6 +7,7 @@ import './Organizations.css';
 export const OrgCard = ({ org }) => (
     // 'org' is a prop being passed in from OrgList()
     <section>
+        <img className="orgImage" src={org.image} alt="Local organizations" />
 
         <h2 className="orgName">{org.name} </h2>
         <div className="orgDes"> {org.description}</div>

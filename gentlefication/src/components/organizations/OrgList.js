@@ -22,7 +22,7 @@ export const Orgs = () => {
     return (
 
         <div className="orgList">
-            <h1 className="orgListHeader">COMMUNITY ORGANIZATIONS</h1>
+            <h1 className="orgListHeader">LOCAL ORGANIZATIONS</h1>
             <div className="orgCard">
                 {orgs.map(orgObj => {
                     return (
