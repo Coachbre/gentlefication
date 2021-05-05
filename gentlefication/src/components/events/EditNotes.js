@@ -1,25 +1,26 @@
 // handles functions related to editing event notes
 
 import { useState, useEffect } from 'react';
-import { useHistory, useParams} from 'react-router';
+import { useHistory, useParams } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import { getSavedEventById, updateSavedEvent } from '../../modules/EventsManager';
 
 export const NoteEdit = () => {
 
     const [savedEvent, setSavedEvent] = useState({
-        // notes:""
+        notes: ""
     });
 
     const [isLoading, setIsLoading] = useState(false);
     //prevents user from submitting multiple times while json data is being updated
 
     const { savedEventId } = useParams();
-    //pulls task.id (an integer) from the route
+    //pulls savedEvent.id (an integer) from the route
+    console.log(savedEvent)
     const history = useHistory();
 
     const handleFieldChange = (event) => {
-        const changedSavedEvent = { ...savedEvent};
+        const changedSavedEvent = { ...savedEvent };
         //changedNote is now equal to a copy of 'note'
         let selectedVal = event.target.value
         if (event.target.id.includes("Id")) {
@@ -39,27 +40,32 @@ export const NoteEdit = () => {
         const editedSavedEvent = {
             id: savedEventId,
             //since we are editing, id is required
-
-            // name: savedEvent.name,
+            userId: savedEvent.userId,
+            eventId: savedEvent.eventId,
             notes: savedEvent.notes
             //watches for updates within key-value pairs
         }
 
         updateSavedEvent(editedSavedEvent)
-        .then(() => history.push('/'))
+            .then(() => history.push('/'))
         //pushes updated event notes and reloads home dashboard
     };
 
     useEffect(() => {
+        console.log("saved Event ID", savedEventId)
+        debugger
         getSavedEventById(savedEventId)
-        //fetch each savedEvent object by ID
-        .then(response => {
-            setSavedEvent(response);
-            //sets note equal to API reponse
-            setIsLoading(false);
-            //allows user submission
-        });
-    }, [savedEventId]);
+            //fetch each savedEvent object by ID
+            .then(response => {
+                console.log(response)
+                setSavedEvent(response);
+                //sets note equal to API reponse
+                setIsLoading(false);
+                //allows user submission
+            });
+    }, [ 
+        // savedEventId
+     ]);
     //passes in updated array of events + notes
 
     return (
@@ -69,26 +75,26 @@ export const NoteEdit = () => {
             <fieldset>
                 <div>
                     {/* <label htmlFor="notesName">{savedEvent.event.name}</label> */}
-                    <input 
-                    type="text"
-                    id="notes"
-                    onChange={handleFieldChange}
-                    className="form-control"
-                     value={savedEvent.notes} />
+                    <input
+                        type="text"
+                        id="notes"
+                        onChange={handleFieldChange}
+                        className="form-control"
+                        value={savedEvent.notes} />
                 </div>
             </fieldset>
 
             <div>
-            <Link to={`/`} >
-            <button className="cancel-note">Cancel</button>
-            </Link>
+                <Link to={`/`} >
+                    <button className="cancel-note">Cancel</button>
+                </Link>
             </div>
 
-            
+
             <button type="button" disabled={isLoading} className="note-update" onClick={updateExistingSavedEvent} >
                 Update
             </button>
-           
+
 
         </form>
     )
