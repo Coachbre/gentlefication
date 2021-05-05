@@ -1,7 +1,7 @@
 // iterates over and populates user's saved events list
 
 import { React, useEffect, useState } from 'react';
-import { getSavedInfo } from '../../modules/EventsManager';
+import { getSavedInfo, savedEventRemoval } from '../../modules/EventsManager';
 import { SavedEventCard } from './SavedEventCard';
 import './Events.css';
 
@@ -21,6 +21,15 @@ export const SavedEvents = () => {
             //sets 'saveEvents' equal to API response
         });
     };
+
+
+    
+    const handleDelete = id => {
+        savedEventRemoval(id)
+        //handleDelete calls savedEventRemoval() from event manager
+        .then(() => getSavedInfo()
+        .then(setSavedEvents));
+    }
 
     useEffect(() => {
         //calls the getSavedEvents function
@@ -42,6 +51,7 @@ export const SavedEvents = () => {
                        
                             savedEvent={savedEventObj}
                             // savedEventObj (each saved event in the array) is now equal to 'savedEvent' (prop passed into SavedEventCard)
+                            handleDelete={handleDelete}
                             />
                         </ul>
                     )

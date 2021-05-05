@@ -22,6 +22,9 @@ export const Events = () => {
 
 
 
+
+
+
     useEffect(() => {
         //useEffect() is used to call the getEvents() function
         //***runs on second render after return reads an empty array***

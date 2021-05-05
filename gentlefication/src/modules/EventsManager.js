@@ -21,7 +21,7 @@ export const getAllSaved = () => {
 }
 
 export const getSavedInfo = () => {
-    return fetch(`${remoteURL}/savedEvents/?_expand=event&_expand=user&_embed=organization`)
+    return fetch(`${remoteURL}/savedEvents/?_expand=event`)
     .then(result => result.json())
 }
 
@@ -40,5 +40,11 @@ export const updateSavedEvent = (editedSavedEvent) => {
         },
         body: JSON.stringify(editedSavedEvent)
         //passed in savedEvent (by id) is stringified
+    }).then(result => result.json())
+}
+
+export const savedEventRemoval = (id) => {
+    return fetch(`${remoteURL}/savedEvents/${id}`, {
+        method: "DELETE"
     }).then(result => result.json())
 }
