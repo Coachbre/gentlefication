@@ -63,12 +63,6 @@
   ],
   "savedEvents": [
     {
-      "userId": 6,
-      "eventId": 2,
-      "notes": "saved Event 1 notes",
-      "id": 1
-    },
-    {
       "id": 2,
       "userId": 1,
       "eventId": 3,
@@ -84,7 +78,7 @@
   "councilMembers": [
     {
       "name": "Tommy Smith",
-      "image": "/images/gentlefication images/smith_tommy.jpg",
+      "image": "../../images/council/smith_tommy.jpg",
       "party": "Nonpartisan",
       "phone": "865-567-6211",
       "email": "tsmith@knoxvilletn.gov",
