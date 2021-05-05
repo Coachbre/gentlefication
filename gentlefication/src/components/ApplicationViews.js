@@ -35,7 +35,7 @@ export const ApplicationViews = () => {
         <Route exact path="/Events">
           <Events />
           <aside>
-            <SavedEventPreview />
+            {/* <SavedEventPreview /> */}
           </aside>
         </Route>
 

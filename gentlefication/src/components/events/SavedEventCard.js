@@ -5,7 +5,7 @@ import './Events.css';
 import { Link } from 'react-router-dom';
 
 export const SavedEventCard = ({savedEvent, handleDelete}) => (
-// 'savedEvent' is a prop being passed in from EventsList() LAST return
+// savedEvent & jandleDelete is a prop being passed in from EventsList() LAST return
 
     <section>
         
@@ -31,6 +31,6 @@ export const SavedPreview = ({savedEvent, handleDelete}) => (
         <h2 className="name">{savedEvent.event.name} </h2>
         <div className="eventTime"> TIME: {savedEvent.event.date} at {savedEvent.event.time}</div>
         <div className="eventLocation"> LOCATION: {savedEvent.event.location}</div>
-        <button className="deleteButton" type="button" >Remove Event</button>
+        <button className="deleteButton" type="button" onClick={() => handleDelete(savedEvent.id)}>Remove Event</button>
     </section>
 )

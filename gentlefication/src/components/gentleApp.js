@@ -16,6 +16,8 @@ export const GentleApp = () => (
               <NavBar />
 
               <ApplicationViews />
+
+            
             
             </>
           )

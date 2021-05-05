@@ -63,12 +63,6 @@
   ],
   "savedEvents": [
     {
-      "id": 2,
-      "userId": 1,
-      "eventId": 3,
-      "notes": "new test"
-    },
-    {
       "userId": 6,
       "eventId": 4,
       "notes": "saved Event 3 notes",
