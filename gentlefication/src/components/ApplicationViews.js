@@ -39,7 +39,7 @@ export const ApplicationViews = () => {
           </aside>
         </Route>
 
-        <Route exact path="">
+        <Route path="/savedEvents/edit/:savedEvents(\d+)">
           <NoteEdit />
         </Route>
 

@@ -16,7 +16,7 @@ export const SavedEventCard = ({savedEvent}) => (
         <div className="eventDes">{savedEvent.event.description}</div>
         <div className="savedNotes"> NOTES: {savedEvent.notes}</div>
 
-        <Link to={`/edit/${savedEvent.id}`}>
+        <Link to={`/savedEvents/edit/${savedEvent.id}`}>
         <button className="saveButton" type="button">ADD OR CHANGE YOUR NOTES</button>
         </Link>
 

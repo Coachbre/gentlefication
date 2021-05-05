@@ -31,14 +31,14 @@ export const getSavedEventById = (id) => {
     //gets single savedEvent by ID
 }
 
-export const updateSavedEvent = (savedEvent) => {
-    return fetch(`${remoteURL}/savedEvents/${savedEvent.id}`, {
+export const updateSavedEvent = (id) => {
+    return fetch(`${remoteURL}/savedEvents/${id}`, {
         method: "PUT",
         headers: {
-            "Contest-Type": "application/json"
+            "Content-Type": "application/json"
             // ^ security measures before updating json data
         },
-        body: JSON.stringify(savedEvent)
-        //stringifies savedEvent that is passed in
+        body: JSON.stringify(id)
+        //passed in savedEvent (by id) is stringified
     }).then(result => result.json())
 }

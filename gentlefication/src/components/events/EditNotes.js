@@ -14,15 +14,20 @@ export const NoteEdit = () => {
     const [isLoading, setIsLoading] = useState(false);
     //prevents user from submitting multiple times while json data is being updated
 
-    const {savedEventId} = useParams();
+    const { savedEventId } = useParams();
     //pulls task.id (an integer) from the route
     const history = useHistory();
 
     const handleFieldChange = (event) => {
         const changedSavedEvent = { ...savedEvent};
         //changedNote is now equal to a copy of 'note'
+        let selectedVal = event.target.value
+        if (event.target.id.includes("Id")) {
+            selectedVal = parseInt(selectedVal)
+        }
+        // look into the savedEvent object copy and find id of the key we are looking for
 
-        changedSavedEvent[event.target.id] = event.target.value;
+        changedSavedEvent[event.target.id] = selectedVal;
         // value of changed task = user input
         setSavedEvent(changedSavedEvent);
     };
@@ -33,6 +38,9 @@ export const NoteEdit = () => {
 
         const editedSavedEvent = {
             id: savedEventId,
+            //since we are editing, id is required
+
+            // name: savedEvent.name,
             notes: savedEvent.notes
             //watches for updates within key-value pairs
         }
@@ -51,9 +59,9 @@ export const NoteEdit = () => {
             setIsLoading(false);
             //allows user submission
         });
-    }, []);
+    }, [savedEventId]);
     //passes in updated array of events + notes
-    
+
     return (
         <form className="noteEdit">
             <h2 className="noteEditTitle">UPDATE EVENT NOTES</h2>
@@ -61,7 +69,8 @@ export const NoteEdit = () => {
             <fieldset>
                 <div>
                     {/* <label htmlFor="notesName">{savedEvent.event.name}</label> */}
-                    <input type="text"
+                    <input 
+                    type="text"
                     id="notes"
                     onChange={handleFieldChange}
                     className="form-control"
@@ -75,9 +84,11 @@ export const NoteEdit = () => {
             </Link>
             </div>
 
+            
             <button type="button" disabled={isLoading} className="note-update" onClick={updateExistingSavedEvent} >
                 Update
             </button>
+           
 
         </form>
     )
