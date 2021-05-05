@@ -15,7 +15,7 @@ export const NoteEdit = () => {
     //prevents user from submitting multiple times while json data is being updated
 
     const { savedEventId } = useParams();
-    //pulls savedEvent.id (an integer) from the route
+    //pulls savedEventId (an integer) from the route in application views
     console.log(savedEvent)
     const history = useHistory();
 
@@ -30,6 +30,7 @@ export const NoteEdit = () => {
 
         changedSavedEvent[event.target.id] = selectedVal;
         // value of changed task = user input
+        console.log(changedSavedEvent)
         setSavedEvent(changedSavedEvent);
     };
 
@@ -44,7 +45,7 @@ export const NoteEdit = () => {
             eventId: savedEvent.eventId,
             notes: savedEvent.notes
             //watches for updates within key-value pairs
-        }
+        };
 
         updateSavedEvent(editedSavedEvent)
             .then(() => history.push('/'))
@@ -53,11 +54,11 @@ export const NoteEdit = () => {
 
     useEffect(() => {
         console.log("saved Event ID", savedEventId)
-        debugger
+    
         getSavedEventById(savedEventId)
             //fetch each savedEvent object by ID
             .then(response => {
-                console.log(response)
+                console.log(savedEventId)
                 setSavedEvent(response);
                 //sets note equal to API reponse
                 setIsLoading(false);
@@ -68,7 +69,9 @@ export const NoteEdit = () => {
      ]);
     //passes in updated array of events + notes
 
+    console.log(savedEvent)
     return (
+   
         <form className="noteEdit">
             <h2 className="noteEditTitle">UPDATE EVENT NOTES</h2>
 
