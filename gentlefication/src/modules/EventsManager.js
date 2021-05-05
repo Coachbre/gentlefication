@@ -24,3 +24,21 @@ export const getSavedInfo = () => {
     return fetch(`${remoteURL}/savedEvents/?_expand=event&_expand=user&_embed=organization`)
     .then(result => result.json())
 }
+
+export const getSavedEventById = (id) => {
+    return fetch(`${remoteURL}/savedEvents/${id}`)
+    .then(result => result.json())
+    //gets single savedEvent by ID
+}
+
+export const updateSavedEvent = (editedSavedEvent) => {
+    return fetch(`${remoteURL}/savedEvents/${editedSavedEvent.id}`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+            // ^ security measures before updating json data
+        },
+        body: JSON.stringify(editedSavedEvent)
+        //passed in savedEvent (by id) is stringified
+    }).then(result => result.json())
+}

@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { useHistory } from "react-router-dom"
+import { useHistory, Link } from "react-router-dom"
 import { authApi, userStorageKey } from "./authSettings"
 
 import "./Login.css";
@@ -50,7 +50,8 @@ export const Register = () => {
                         body: JSON.stringify({
                             email: registerUser.email,
                             name: `${registerUser.firstName} ${registerUser.lastName}`,
-                            zipcode: registerUser.zipcode
+                            zipcode: parseInt(registerUser.zipcode)
+                            //takes user input (zipcode as a string) and adds as an integer to json data
                         })
                     })
                         .then(res => res.json())
@@ -180,8 +181,18 @@ export const Register = () => {
                                 fullWidth
                                 variant="contained"
                                 className={classes.submit}>
-                                Register and Login
+                                Register & Login
                             </Button>
+
+                        </Grid>
+                        <Grid item>
+
+                            <Link to="/login"
+                                fullWidth
+                                variant="contained"
+                                className={classes.submit}>
+                                Cancel
+                            </Link>
 
                         </Grid>
 
