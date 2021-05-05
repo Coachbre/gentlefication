@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./NavBar.css";
 import Logo from "../../images/logo.png";
 
+
 //Layout for app navigation bar
 
 export const NavBar = () => {
@@ -35,7 +36,9 @@ export const NavBar = () => {
                     </li>
 
                     <li className="log-out">
+                        <Link>
                         LOG OUT
+                    </Link>
                     </li>
                 </ul>
      

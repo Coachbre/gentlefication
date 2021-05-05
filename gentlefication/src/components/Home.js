@@ -3,7 +3,7 @@ import { SavedEvents } from "./events/SavedEvents";
 
 export const Home = () => {
     return ( <>
-        <h1>Hello there, this is home. Friend.</h1>
+        <h1>HOME</h1>
         <SavedEvents />
         </>
     )

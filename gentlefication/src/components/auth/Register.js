@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { useHistory } from "react-router-dom"
+import { useHistory, Link } from "react-router-dom"
 import { authApi, userStorageKey } from "./authSettings"
 
 import "./Login.css";
@@ -183,6 +183,16 @@ export const Register = () => {
                                 className={classes.submit}>
                                 Register & Login
                             </Button>
+
+                        </Grid>
+                        <Grid item>
+
+                            <Link to="/login"
+                                fullWidth
+                                variant="contained"
+                                className={classes.submit}>
+                                Cancel
+                            </Link>
 
                         </Grid>
 
