@@ -23,7 +23,7 @@ export const Events = () => {
     };
 
 
-   
+
 
 
 
@@ -36,29 +36,29 @@ export const Events = () => {
     return (
         <>
             <div className="eventList">
-                <h1 className="eventListHeader">EVENTS LIST</h1>
+                <h1 className="eventListHeader">COME GET TO KNOW YOUR NEIGHBORS!</h1>
                 <div className="eventCard">
                     {events.map(eventObj => {
                         //iterates over the array of events
                         return (
-             
-                        <ul>
-                            <EventCard
-                            key={eventObj.id}
-                            //unique key used by react (not required, but good convention)
-                            event={eventObj}
-                            // eventObj (each event in the array) is now equal to 'event' (prop passed into EventCard)
-                            />
-                        </ul>
-                        
+
+                            <ul>
+                                <EventCard
+                                    key={eventObj.id}
+                                    //unique key used by react (not required, but good convention)
+                                    event={eventObj}
+                                // eventObj (each event in the array) is now equal to 'event' (prop passed into EventCard)
+                                />
+                            </ul>
+
 
                         )
                     })}
                     <aside>
-                            <SavedEventsPreview
+                        <SavedEventsPreview
 
-                             />
-                        </aside>
+                        />
+                    </aside>
                 </div>
 
             </div>

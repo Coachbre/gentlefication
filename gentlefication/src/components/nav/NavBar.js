@@ -27,13 +27,13 @@ export const NavBar = () => {
 
                 <li className="nav-item">
                     <Link to="/Events">
-                        EVENTS
+                        COMMUNITY EVENTS
                     </Link>
                 </li>
 
                 <li className="nav-item">
                     <Link to="/Organizations">
-                        COMMUNITY RESOURCES
+                        LOCAL RESOURCES
                     </Link>
                 </li>
 
