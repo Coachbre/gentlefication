@@ -13,7 +13,7 @@ export const getAllEvents = () => {
 export const getEventById = (id) => {
     return fetch(`${remoteURL}/events/${id}`)
     .then(result => result.json())
-    //gets single savedEvent by ID
+    //gets single event by ID
 }
 
 export const getEventOrg = () => {

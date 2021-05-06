@@ -5,6 +5,7 @@ import { React, useEffect, useState } from 'react';
 import { getEventOrg, addToSavedList, getEventById, getAllSaved } from '../../modules/EventsManager';
 import { EventCard } from './EventCard';
 import './Events.css';
+import { SavedEvents } from './SavedEvents';
 
 import { SavedEventsPreview } from "./SavedEventsPreview";
 
@@ -22,33 +23,34 @@ export const Events = () => {
             });
 
     };
-
+//*********************************** */
     const [saved, setSaved] = useState({
-        userId:"",
-        eventId: "",
-        notes: ""
+        eventId: parseInt(events.id)
+        
     });
 
-    //'events' is always the current value, 'setEvents' is used to change it, and 'useState' is the initial value
+    
     const getSingleEvent = () => {
-        // getEvents() ultimately returns single event object from json array
+        // getSingleEvent() ultimately returns single event object from json array
         return getEventById()
             //fetches json info
-            .then((singleEvent /*taco*/) => {
+            .then(singleEvent => { 
                 setSaved(singleEvent)
-                console.log(saved)
-                // waits for response then sets 'events' variable equal to the API data
+                // waits for response then sets 'saved' variable equal to the API data
             });
     };
 
-    const handleAddToList = () => {
-        addToSavedList(saved)
-        .then(() => getAllSaved()
-        .then(setSaved));
+    const handleAddToList = (id) => {
+
+        const saved = {
         
+            eventId: parseInt(id)
+        }
+        addToSavedList(saved)
+        .then(() => getAllSaved())
     };
 
- 
+ //******************************************* */
 
     useEffect(() => {
         //useEffect() is used to call the getEvents() function
