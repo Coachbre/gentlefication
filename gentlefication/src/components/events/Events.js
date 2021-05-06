@@ -2,7 +2,7 @@
 //handles add events to saved list ******************
 
 import { React, useEffect, useState } from 'react';
-import { getEventOrg, addToSavedList, getEventById, getAllSaved } from '../../modules/EventsManager';
+import { getEventOrg, addToSavedList, getEventById, getSavedInfo } from '../../modules/EventsManager';
 import { EventCard } from './EventCard';
 import './Events.css';
 import { SavedEvents } from './SavedEvents';
@@ -34,6 +34,7 @@ export const Events = () => {
 
     });
 
+    
 
     const getSingleEvent = () => {
         // getSingleEvent() ultimately returns single event object from json array
@@ -54,7 +55,8 @@ export const Events = () => {
             notes: ""
         }
         addToSavedList(saved)
-            .then(() => getAllSaved())
+            .then(() => getSavedInfo()
+            .then(setSaved));
     };
 
     //******************************************* */
@@ -64,6 +66,7 @@ export const Events = () => {
         //***runs on second render after return reads an empty array***
         getEvents();
         getSingleEvent();
+     
     }, []);
     //initially runs with an empty array, then ^^ useEffect() runs after
     return (

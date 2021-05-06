@@ -95,13 +95,25 @@
       "id": 3,
       "userId": 6,
       "eventId": 4,
-      "notes": "Arrive 2 hours early to set up music"
+      "notes": "THIS WAS CREATED BY USER 6"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "eventId": 1,
+      "notes": "bring cookies"
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "eventId": 2,
+      "notes": "added to user 1's list"
     },
     {
       "eventId": 3,
       "userId": 1,
       "notes": "",
-      "id": 4
+      "id": 7
     }
   ],
   "councilMembers": [

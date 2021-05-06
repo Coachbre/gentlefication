@@ -27,9 +27,10 @@ export const getAllSaved = () => {
     .then(result => result.json())
 }
 
-export const getSavedInfo = () => {
-    return fetch(`${remoteURL}/savedEvents/?_expand=event`)
+export const getSavedInfo = (currentUser) => {
+    return fetch(`${remoteURL}/savedEvents/?userId=${currentUser}&_expand=event&_expand=user`)
     .then(result => result.json())
+    //get event info and user info related to each saved event
 }
 
 export const getSavedEventById = (id) => {
@@ -65,3 +66,4 @@ export const addToSavedList = (addedEvent) => {
         body: JSON.stringify(addedEvent)
     }).then(result => result.json())
 }
+
