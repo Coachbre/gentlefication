@@ -3,6 +3,7 @@
 import { React, useEffect, useState } from 'react';
 import { getSavedInfo, savedEventRemoval } from '../../modules/EventsManager';
 import { SavedEventCard } from './SavedEventCard';
+
 import './Events.css';
 
 

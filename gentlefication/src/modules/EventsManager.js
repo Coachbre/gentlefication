@@ -9,6 +9,13 @@ export const getAllEvents = () => {
     //waits for response, then parses into json data 
 }
 
+
+export const getEventById = (id) => {
+    return fetch(`${remoteURL}/events/${id}`)
+    .then(result => result.json())
+    //gets single savedEvent by ID
+}
+
 export const getEventOrg = () => {
     return fetch(`${remoteURL}/events/?_expand=organization`)
     .then(result => result.json())
@@ -46,5 +53,15 @@ export const updateSavedEvent = (editedSavedEvent) => {
 export const savedEventRemoval = (id) => {
     return fetch(`${remoteURL}/savedEvents/${id}`, {
         method: "DELETE"
+    }).then(result => result.json())
+}
+
+export const addToSavedList = (addedEvent) => {
+    return fetch (`${remoteURL}/savedEvents`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(addedEvent)
     }).then(result => result.json())
 }

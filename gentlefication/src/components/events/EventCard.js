@@ -3,12 +3,13 @@
 import React from 'react';
 import './Events.css';
 
-export const EventCard = ({event}) => (
-// 'event' is a prop being passed in from EventsList() LAST return
+
+export const EventCard = ({event, handleAddToList}) => (
+// 'event' and 'handleAddToList is a prop being passed in from EventsList() LAST return
     <section>
-        <button className="saveButton" type="button">Save</button>
+        <button type="button" className="saveButton" onClick={() => handleAddToList(event)}>Save</button>
         <h2 className="eventName">{event.name} </h2>
-        <div>ORGANIZED BY: {event.organization.name}</div>
+        <div>HOSTED BY: {event.organization.name}</div>
         <div className="eventTime"> DATE: {event.date} at {event.time}</div>
         <div className="eventLocation"> LOCATION: {event.location}</div>
         <div className="eventDes"> {event.description}</div>

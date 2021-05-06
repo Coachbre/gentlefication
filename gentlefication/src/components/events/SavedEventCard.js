@@ -5,7 +5,7 @@ import './Events.css';
 import { Link } from 'react-router-dom';
 
 export const SavedEventCard = ({savedEvent, handleDelete}) => (
-// savedEvent & jandleDelete is a prop being passed in from EventsList() LAST return
+// savedEvent & handleDelete is a prop being passed in from EventsList() LAST return
 
     <section>
         

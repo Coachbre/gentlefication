@@ -1,7 +1,8 @@
 // iterates over and populates full events list
+//handles add events to saved list ******************
 
 import { React, useEffect, useState } from 'react';
-import { getEventOrg } from '../../modules/EventsManager';
+import { getEventOrg, addToSavedList, getEventById, getAllSaved } from '../../modules/EventsManager';
 import { EventCard } from './EventCard';
 import './Events.css';
 
@@ -22,15 +23,38 @@ export const Events = () => {
 
     };
 
+    const [saved, setSaved] = useState({
+        userId:"",
+        eventId: "",
+        notes: ""
+    });
 
+    //'events' is always the current value, 'setEvents' is used to change it, and 'useState' is the initial value
+    const getSingleEvent = () => {
+        // getEvents() ultimately returns single event object from json array
+        return getEventById()
+            //fetches json info
+            .then((singleEvent /*taco*/) => {
+                setSaved(singleEvent)
+                console.log(saved)
+                // waits for response then sets 'events' variable equal to the API data
+            });
+    };
 
+    const handleAddToList = () => {
+        addToSavedList(saved)
+        .then(() => getAllSaved()
+        .then(setSaved));
+        
+    };
 
-
+ 
 
     useEffect(() => {
         //useEffect() is used to call the getEvents() function
         //***runs on second render after return reads an empty array***
         getEvents();
+        getSingleEvent();
     }, []);
     //initially runs with an empty array, then ^^ useEffect() runs after
     return (
@@ -48,6 +72,7 @@ export const Events = () => {
                                     //unique key used by react (not required, but good convention)
                                     event={eventObj}
                                 // eventObj (each event in the array) is now equal to 'event' (prop passed into EventCard)
+                                handleAddToList={handleAddToList}
                                 />
                             </ul>
 
