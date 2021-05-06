@@ -5,9 +5,7 @@ import { React, useEffect, useState } from 'react';
 import { getEventOrg, addToSavedList, getEventById, getSavedInfo } from '../../modules/EventsManager';
 import { EventCard } from './EventCard';
 import './Events.css';
-import { SavedEvents } from './SavedEvents';
 
-import { SavedEventsPreview } from "./SavedEventsPreview";
 
 export const Events = () => {
 
@@ -27,6 +25,7 @@ export const Events = () => {
     };
     //*********************************** */
     const [saved, setSaved] = useState({
+        //being called but not within react component ^^^
         eventId: parseInt(events.id),
         userId: currentUser,
         notes: ""
@@ -67,6 +66,7 @@ export const Events = () => {
         getEvents();
         getSingleEvent();
      
+     
     }, []);
     //initially runs with an empty array, then ^^ useEffect() runs after
     return (
@@ -91,11 +91,7 @@ export const Events = () => {
 
                         )
                     })}
-                    <aside>
-                        <SavedEventsPreview
-
-                        />
-                    </aside>
+                   
                 </div>
 
             </div>

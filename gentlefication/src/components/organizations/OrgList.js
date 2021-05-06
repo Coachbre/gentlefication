@@ -3,8 +3,11 @@
 import { React, useEffect, useState } from 'react';
 import { getAllOrgs } from '../../modules/OrgManager';
 import { OrgCard } from './OrgCard';
+// import { SelectedOrgEvents } from './SelectedOrgEvents';
+
 
 export const Orgs = () => {
+  
 
     const [orgs, setOrgs] = useState([]);
     const getOrgs = () => {
@@ -16,13 +19,15 @@ export const Orgs = () => {
     };
 
 
+  
+
     useEffect(() => {
         getOrgs();
     }, []);
     return (
 
         <div className="orgList">
-            <h1 className="orgListHeader">ORGANIZATIONS</h1>
+            <h1 className="orgListHeader">ORGANIZATIONS & NONPROFITS</h1>
             <div className="orgCard">
                 {orgs.map(orgObj => {
                     return (
@@ -37,6 +42,9 @@ export const Orgs = () => {
                     )
                 })}
             </div>
+            <aside>
+                {/* <SelectedOrgEvents /> */}
+            </aside>
         </div>
 
     );

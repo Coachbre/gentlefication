@@ -16,7 +16,7 @@ export const NoteEdit = () => {
 
     const { savedEventId } = useParams();
     //pulls savedEventId (an integer) from the route in application views
-    console.log(savedEvent)
+  
     const history = useHistory();
 
     const handleFieldChange = (event) => {
@@ -30,7 +30,7 @@ export const NoteEdit = () => {
 
         changedSavedEvent[event.target.id] = selectedVal;
         // value of changed task = user input
-        console.log(changedSavedEvent)
+       
         setSavedEvent(changedSavedEvent);
     };
 
@@ -53,12 +53,12 @@ export const NoteEdit = () => {
     };
 
     useEffect(() => {
-        console.log("saved Event ID", savedEventId)
+   
     
         getSavedEventById(savedEventId)
             //fetch each savedEvent object by ID
             .then(response => {
-                console.log(savedEventId)
+              
                 setSavedEvent(response);
                 //sets note equal to API reponse
                 setIsLoading(false);

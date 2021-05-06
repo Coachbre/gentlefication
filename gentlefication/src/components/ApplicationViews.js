@@ -9,10 +9,11 @@ import { Home } from "./Home";
 
 import { Events } from "./events/Events";
 import { SavedEvents } from "./events/SavedEvents";
-import { SavedEventPreview } from "./events/SavedEventsPreview";
+import { SavedEventsPreview } from "./events/SavedEventsPreview";
 import { NoteEdit } from "./events/EditNotes";
 
 import { Orgs } from "./organizations/OrgList";
+import { EventsByOrg } from "./organizations/SelectedOrgEvents"
 
 import { Council } from "./council/Council";
 
@@ -34,6 +35,11 @@ export const ApplicationViews = () => {
 
         <Route exact path="/Events">
           <Events />
+          <aside>
+                        <SavedEventsPreview
+
+                        />
+                    </aside>
         </Route>
 
         <Route path="/savedEvents/edit/:savedEventId(\d+)">
@@ -42,10 +48,10 @@ export const ApplicationViews = () => {
 
         <Route exact path="/Organizations">
           <Orgs />
-          
-          <aside>
-            <Events />
-          </aside>
+        </Route>
+
+        <Route exact path="/organizations/events/:organizationId(\d+)">
+          <EventsByOrg />
         </Route>
 
         <Route exact path="/Council">
