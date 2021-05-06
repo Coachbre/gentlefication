@@ -3,6 +3,7 @@
 import { React, useEffect, useState } from 'react';
 import { getSavedInfo, savedEventRemoval } from '../../modules/EventsManager';
 import { SavedEventCard } from './SavedEventCard';
+
 import './Events.css';
 
 
@@ -39,7 +40,7 @@ export const SavedEvents = () => {
     return (
 
         <div>
-            <h1 className="eventListHeader">YOUR UPCOMING ACTIVITIES</h1>
+            <h1 className="eventListHeader">YOUR UPCOMING EVENTS</h1>
             <div>
                 {savedEvents.map(savedEventObj => {
                     //iterates over the array of saved events
