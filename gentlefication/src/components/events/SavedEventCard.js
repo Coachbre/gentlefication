@@ -10,7 +10,7 @@ export const SavedEventCard = ({savedEvent, handleDelete}) => (
     <section>
         
         <h2 className="name">{savedEvent.event.name}</h2>
-        <div>Organized by: {savedEvent.event.organization}</div>
+        {/* <div>Organized by: {savedEvent.event.organization}</div> */}
         <div className="eventTime"> TIME: {savedEvent.event.date} at {savedEvent.event.time}</div>
         <div className="eventLocation"> LOCATION: {savedEvent.event.location}</div>
         <div className="eventDes">{savedEvent.event.description}</div>
@@ -26,11 +26,11 @@ export const SavedEventCard = ({savedEvent, handleDelete}) => (
 )
 
 //preview card of saved events that goes into aside on main events view
-export const SavedPreview = ({savedEvent, handleDelete}) => (
+export const SavedPreview = ({savedEvent /*handleDelete*/}) => (
     <section>
         <h2 className="name">{savedEvent.event.name} </h2>
         <div className="eventTime"> TIME: {savedEvent.event.date} at {savedEvent.event.time}</div>
         <div className="eventLocation"> LOCATION: {savedEvent.event.location}</div>
-        <button className="deleteButton" type="button" onClick={() => handleDelete(savedEvent.id)}>REMOVE EVENT</button>
+        {/* <button className="deleteButton" type="button" onClick={() => handleDelete(savedEvent.id)}>REMOVE EVENT</button> */}
     </section>
 )
