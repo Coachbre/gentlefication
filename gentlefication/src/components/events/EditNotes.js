@@ -69,7 +69,7 @@ export const NoteEdit = () => {
      ]);
     //passes in updated array of events + notes
 
-    console.log(savedEvent)
+ 
     return (
    
         <form className="noteEdit">

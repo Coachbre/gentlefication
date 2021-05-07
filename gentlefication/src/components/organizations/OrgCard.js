@@ -11,6 +11,7 @@ export const OrgCard = ({ org }) => (
 
         <Link to={`/organizations/events/${org.id}`}>
             <button type="button" className="eventsButton">VIEW SCHEDULED EVENTS</button>
+          
         </Link>
 
         <img className="orgImage" src={org.image} alt="Local organization image" />

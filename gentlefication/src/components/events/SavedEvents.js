@@ -23,11 +23,12 @@ export const SavedEvents = () => {
         .then((savedEventsFromAPI) => {
             setSavedEvents(savedEventsFromAPI)
             //sets 'saveEvents' equal to API response
+            
         });
+        
     };
 
 
-    
     const handleDelete = id => {
         savedEventRemoval(id)
         //handleDelete calls savedEventRemoval() from event manager
