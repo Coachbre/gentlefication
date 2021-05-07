@@ -1,0 +1,10 @@
+.memberImage {
+    /* max-width: 10%;
+    height: auto ;
+    border-radius: 50%; */
+
+    vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
