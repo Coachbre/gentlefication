@@ -35,6 +35,7 @@ export const Events = () => {
         const saved = {
             eventId: parseInt(eventObj.id),
             userId: currentUser,
+           
             //logs current users id # as userId
             notes: ""
         }

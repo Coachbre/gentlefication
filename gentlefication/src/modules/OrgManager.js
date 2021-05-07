@@ -11,5 +11,10 @@ export const getAllOrgs = () => {
 
 export const getOrgById = (id) => {
     return fetch(`${remoteURL}/organizations/${id}`)
-    .then(result => result.json)
+    .then(result => result.json())
+}
+
+export const getOrgEventById = (id) => {
+    return fetch(`${remoteURL}/events/?organizationId=${id}`)
+    .then(result => result.json())
 }

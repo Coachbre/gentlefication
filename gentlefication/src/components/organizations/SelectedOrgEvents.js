@@ -5,6 +5,7 @@ import { useHistory, useParams } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import { OrgEventCard } from './OrgEventCards';
 import { getEventOrg } from '../../modules/EventsManager';
+import { getOrgEventById } from '../../modules/OrgManager';
 
 export const EventsByOrg = () => {
     const { organizationId } = useParams();
@@ -13,16 +14,12 @@ export const EventsByOrg = () => {
 
     const getMatchingEvents = () => {
 
-        return getEventOrg()
-        
-            //fetch each event object by organization id
-            .then((events) => {
-                debugger
-                if (organizationId === events.organizationId) {
-                setMatchingEvents(events)}
-
-            });
+        return getOrgEventById(organizationId)
+        .then((response => {
+            setMatchingEvents(response)
+        }))
     }
+    //write comment here 
     
     useEffect(() => {
         getMatchingEvents();

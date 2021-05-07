@@ -10,7 +10,7 @@ export const SavedEventCard = ({savedEvent, handleDelete}) => (
     <section>
         
         <h2 className="name">{savedEvent.event.name}</h2>
-        <div>Organized by: {savedEvent.event.organization}</div>
+        {/* <div>Organized by: {savedEvent.event.organization}</div> */}
         <div className="eventTime"> TIME: {savedEvent.event.date} at {savedEvent.event.time}</div>
         <div className="eventLocation"> LOCATION: {savedEvent.event.location}</div>
         <div className="eventDes">{savedEvent.event.description}</div>
