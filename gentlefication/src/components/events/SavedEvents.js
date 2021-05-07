@@ -12,19 +12,23 @@ export const SavedEvents = () => {
 
     const [savedEvents, setSavedEvents] = useState([]);
     //savedEvents is current value, setSavedEvents changes value
+    
     const getSavedEvents = () => {
+
+        const currentUser = JSON.parse(sessionStorage.getItem("gentle_user"))
         
         // returns saved events array from json
-        return getSavedInfo()
+        return getSavedInfo(currentUser)
         //fetches json data
         .then((savedEventsFromAPI) => {
             setSavedEvents(savedEventsFromAPI)
             //sets 'saveEvents' equal to API response
+            
         });
+        
     };
 
 
-    
     const handleDelete = id => {
         savedEventRemoval(id)
         //handleDelete calls savedEventRemoval() from event manager

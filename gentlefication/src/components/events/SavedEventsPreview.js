@@ -10,9 +10,11 @@ export const SavedEventsPreview = () => {
     const [savedEvents, setSavedEvents] = useState([]);
     //savedEvents is current value, setSavedEvents changes value
     const getSavedPreview = () => {
+
+        const currentUser = JSON.parse(sessionStorage.getItem("gentle_user"))
         
         // returns saved events array from json
-        return getSavedInfo()
+        return getSavedInfo(currentUser)
         //fetches json data
         .then((savedEventsFromAPI) => {
             setSavedEvents(savedEventsFromAPI)
@@ -36,7 +38,7 @@ export const SavedEventsPreview = () => {
     return (
 
         <div>
-            <h1 className="eventListHeader">YOUR UPCOMING EVENTS</h1>
+            <h1 className="eventListHeader">YOUR SAVED EVENTS</h1>
             <div>
                 {savedEvents.map(savedEventObj => {
                     //iterates over the array of saved events

@@ -43,7 +43,7 @@
       "id": 3
     },
     {
-      "name": "Lynne Anthony Community Center",
+      "name": "Lynne Thompson Community Center",
       "logo": "",
       "description": "Community center is open m-f and provides tutoring, senior citizen events, and a local gym",
       "address": "789 Kingston Pike",
@@ -92,16 +92,40 @@
   ],
   "savedEvents": [
     {
-      "id": 3,
-      "userId": 6,
-      "eventId": 4,
-      "notes": "Arrive 2 hours early to set up music"
+      "id": 4,
+      "userId": 1,
+      "eventId": 1,
+      "notes": "bring cookies"
+    },
+    {
+      "id": 6,
+      "userId": 1,
+      "eventId": 2,
+      "notes": "added to user 1's list"
     },
     {
       "eventId": 3,
       "userId": 1,
       "notes": "",
-      "id": 4
+      "id": 7
+    },
+    {
+      "eventId": 1,
+      "userId": 6,
+      "notes": "",
+      "id": 8
+    },
+    {
+      "eventId": 3,
+      "userId": 6,
+      "notes": "",
+      "id": 9
+    },
+    {
+      "eventId": 2,
+      "userId": 6,
+      "notes": "",
+      "id": 10
     }
   ],
   "councilMembers": [
