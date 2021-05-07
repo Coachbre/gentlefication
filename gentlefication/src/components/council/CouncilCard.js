@@ -10,7 +10,7 @@ export const CouncilCard = ({council}) => (
     
         <div className="memberHeader">
         <h2 className="memberName">{council.name} - {council.district.name}</h2>
-        <button><a href={council.url}>Visit Website</a></button>
+        <button className><a href={council.url}>Visit Website</a></button>
         </div>
         <div className="membercontact">
         <h3>CONTACT INFO</h3>
