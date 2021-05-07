@@ -2,7 +2,8 @@
 //handles add events to saved list ******************
 
 import { React, useEffect, useState } from 'react';
-import { getEventOrg, addToSavedList, getEventById, getSavedInfo } from '../../modules/EventsManager';
+import { getEventOrg, addToSavedList, getEventById, getSavedInfo, savedEventRemoval } from '../../modules/EventsManager';
+import { SavedPreview } from './SavedEventCard';
 import { EventCard } from './EventCard';
 import './Events.css';
 
@@ -10,8 +11,9 @@ import './Events.css';
 export const Events = () => {
 
     const currentUser = JSON.parse(sessionStorage.getItem("gentle_user"))
-
+    const [savedEvents, setSavedEvents] = useState([])
     const [events, setEvents] = useState([]);
+
     //'events' is always the current value, 'setEvents' is used to change it, and 'useState' is the initial value
     const getEvents = () => {
         // getEvents() ultimately returns events array from json
@@ -24,28 +26,24 @@ export const Events = () => {
 
     };
     //*********************************** */
-    const [saved, setSaved] = useState({
-        //being called but not within react component??? ^^^
-        eventId: parseInt(events.id),
-        userId: currentUser,
-        notes: ""
 
 
-    });
 
-    
 
     const handleAddToList = (eventObj /*taco*/) => {
-      //
+        //
         const saved = {
             eventId: parseInt(eventObj.id),
             userId: currentUser,
             //logs current users id # as userId
             notes: ""
         }
+        console.log(saved)
         addToSavedList(saved)
             .then(() => getSavedInfo(currentUser)
-            .then(setSaved));
+                .then((infoFromAPI) => {
+                    setSavedEvents(infoFromAPI)
+                }));
     };
 
     //******************************************* */
@@ -54,10 +52,15 @@ export const Events = () => {
         //useEffect() is used to call the getEvents() function
         //***runs on second render after return reads an empty array***
         getEvents();
-        
-     
-     
+        getSavedInfo(currentUser)
+            .then((savedEventsFromAPI) => {
+                setSavedEvents(savedEventsFromAPI)
+            })
+
+
+
     }, []);
+    console.log('this is saved', savedEvents)
     //initially runs with an empty array, then ^^ useEffect() runs after
     return (
         <>
@@ -81,10 +84,25 @@ export const Events = () => {
 
                         )
                     })}
-                   
+
                 </div>
 
             </div>
+            <aside>
+            <h1 className="eventListHeader">YOUR SAVED EVENTS</h1>
+
+                {savedEvents.map(savedEventObj => {
+
+                    return (
+                        
+                            <SavedPreview
+                                key={savedEventObj.id}
+                                savedEvent={savedEventObj} />
+
+
+                    )
+                })}
+            </aside>
         </>
     );
 };

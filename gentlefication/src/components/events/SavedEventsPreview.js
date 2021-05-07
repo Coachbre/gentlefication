@@ -6,12 +6,12 @@ import './Events.css';
 
 export const SavedEventsPreview = () => {
 
+    const currentUser = JSON.parse(sessionStorage.getItem("gentle_user"))
 
     const [savedEvents, setSavedEvents] = useState([]);
     //savedEvents is current value, setSavedEvents changes value
     const getSavedPreview = () => {
 
-        const currentUser = JSON.parse(sessionStorage.getItem("gentle_user"))
         
         // returns saved events array from json
         return getSavedInfo(currentUser)

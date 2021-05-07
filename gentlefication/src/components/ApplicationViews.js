@@ -35,11 +35,7 @@ export const ApplicationViews = () => {
 
         <Route exact path="/Events">
           <Events />
-          <aside>
-                        <SavedEventsPreview
-
-                        />
-                    </aside>
+          
         </Route>
 
         <Route path="/savedEvents/edit/:savedEventId(\d+)">

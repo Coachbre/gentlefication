@@ -99,45 +99,15 @@
   "savedEvents": [
     {
       "eventId": 1,
-      "userId": 6,
+      "userId": 1,
       "notes": "",
-      "id": 8
-    },
-    {
-      "eventId": 3,
-      "userId": 6,
-      "notes": "",
-      "id": 9
+      "id": 1
     },
     {
       "eventId": 2,
-      "userId": 6,
-      "notes": "",
-      "id": 10
-    },
-    {
-      "eventId": 3,
-      "userId": 7,
-      "notes": "",
-      "id": 11
-    },
-    {
-      "eventId": 1,
       "userId": 1,
       "notes": "",
-      "id": 14
-    },
-    {
-      "eventId": 3,
-      "userId": 1,
-      "notes": "",
-      "id": 16
-    },
-    {
-      "eventId": 4,
-      "userId": 1,
-      "notes": "",
-      "id": 17
+      "id": 2
     }
   ],
   "councilMembers": [
