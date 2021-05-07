@@ -8,7 +8,7 @@ export const CouncilCard = ({council}) => (
         <img className="memberImage" src={council.image} alt="council member headshot" />
     
         <div className="memberHeader">
-        <h2 className="memberName">{council.name} - District {council.district}</h2>
+        <h2 className="memberName">{council.name} - {council.district.name}</h2>
         <a href={council.url}>Visit Website</a>
         </div>
         <div className="membercontact">

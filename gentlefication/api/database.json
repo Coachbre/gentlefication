@@ -231,37 +231,37 @@
   ],
   "districts": [
     {
-      "districtName": "1st District",
+      "name": "1st District",
       "zipcode": 37921,
       "id": 1
     },
     {
-      "districtName": "2nd District",
+      "name": "2nd District",
       "zipcode": 37914,
       "id": 2
     },
     {
-      "districtName": "3rd District",
+      "name": "3rd District",
       "zipcode": 12345,
       "id": 3
     },
     {
-      "districtName": "4th District",
+      "name": "4th District",
       "zipcode": 23456,
       "id": 4
     },
     {
-      "districtName": "5th District",
+      "name": "5th District",
       "zipcode": 34567,
       "id": 5
     },
     {
-      "districtName": "6th District",
+      "name": "6th District",
       "zipcode": 45678,
       "id": 6
     },
     {
-      "districtName": "At Large",
+      "name": "At Large",
       "zipcode": null,
       "id": 7
     }
