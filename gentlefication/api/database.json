@@ -12,6 +12,12 @@
       "name": "hi hi",
       "zipcode": 88888,
       "id": 6
+    },
+    {
+      "email": "nala@dog.com",
+      "name": "Nala Coach",
+      "zipcode": 37701,
+      "id": 7
     }
   ],
   "organizations": [
@@ -92,24 +98,6 @@
   ],
   "savedEvents": [
     {
-      "id": 4,
-      "userId": 1,
-      "eventId": 1,
-      "notes": "bring cookies"
-    },
-    {
-      "id": 6,
-      "userId": 1,
-      "eventId": 2,
-      "notes": "added to user 1's list"
-    },
-    {
-      "eventId": 3,
-      "userId": 1,
-      "notes": "",
-      "id": 7
-    },
-    {
       "eventId": 1,
       "userId": 6,
       "notes": "",
@@ -126,6 +114,18 @@
       "userId": 6,
       "notes": "",
       "id": 10
+    },
+    {
+      "eventId": 3,
+      "userId": 7,
+      "notes": "",
+      "id": 11
+    },
+    {
+      "eventId": 3,
+      "userId": 1,
+      "notes": "",
+      "id": 13
     }
   ],
   "councilMembers": [

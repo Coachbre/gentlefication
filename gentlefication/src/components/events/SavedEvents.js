@@ -9,13 +9,13 @@ import './Events.css';
 
 export const SavedEvents = () => {
 
+    const currentUser = JSON.parse(sessionStorage.getItem("gentle_user"))
 
     const [savedEvents, setSavedEvents] = useState([]);
     //savedEvents is current value, setSavedEvents changes value
     
     const getSavedEvents = () => {
 
-        const currentUser = JSON.parse(sessionStorage.getItem("gentle_user"))
         
         // returns saved events array from json
         return getSavedInfo(currentUser)
@@ -32,7 +32,7 @@ export const SavedEvents = () => {
     const handleDelete = id => {
         savedEventRemoval(id)
         //handleDelete calls savedEventRemoval() from event manager
-        .then(() => getSavedInfo()
+        .then(() => getSavedInfo(currentUser)
         .then(setSavedEvents));
     }
 
