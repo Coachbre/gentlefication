@@ -35,16 +35,6 @@ export const Events = () => {
 
     
 
-    const getSingleEvent = () => {
-        // getSingleEvent() ultimately returns single event object from json array
-        return getEventById()
-            //fetches json info
-            .then(singleEvent => {
-                setSaved(singleEvent)
-                // waits for response then sets 'saved' variable equal to the API data
-            });
-    };
-
     const handleAddToList = (eventObj /*taco*/) => {
       //
         const saved = {
@@ -54,7 +44,7 @@ export const Events = () => {
             notes: ""
         }
         addToSavedList(saved)
-            .then(() => getSavedInfo()
+            .then(() => getSavedInfo(currentUser)
             .then(setSaved));
     };
 
@@ -64,7 +54,7 @@ export const Events = () => {
         //useEffect() is used to call the getEvents() function
         //***runs on second render after return reads an empty array***
         getEvents();
-        getSingleEvent();
+        
      
      
     }, []);
