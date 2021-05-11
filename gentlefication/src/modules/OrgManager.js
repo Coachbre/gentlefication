@@ -18,3 +18,4 @@ export const getOrgEventById = (id) => {
     return fetch(`${remoteURL}/events/?organizationId=${id}`)
     .then(result => result.json())
 }
+
