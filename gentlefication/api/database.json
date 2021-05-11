@@ -104,10 +104,16 @@
       "id": 1
     },
     {
-      "eventId": 2,
+      "eventId": 4,
       "userId": 1,
       "notes": "",
       "id": 2
+    },
+    {
+      "eventId": 3,
+      "userId": 1,
+      "notes": "",
+      "id": 3
     }
   ],
   "councilMembers": [
