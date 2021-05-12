@@ -87,16 +87,15 @@ export const NoteEdit = () => {
                 </div>
             </fieldset>
 
+            <button type="button" disabled={isLoading} className="note-update" onClick={updateExistingSavedEvent} >
+                Update
+            </button>
+
             <div>
                 <Link to={`/`} >
                     <button className="cancel-note">Cancel</button>
                 </Link>
             </div>
-
-
-            <button type="button" disabled={isLoading} className="note-update" onClick={updateExistingSavedEvent} >
-                Update
-            </button>
 
 
         </form>

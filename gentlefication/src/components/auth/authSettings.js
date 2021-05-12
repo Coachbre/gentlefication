@@ -6,6 +6,7 @@ export const authApi = {
 
 // The user id is saved under the key gentle_user in session Storage. Change below if needed!
 export const userStorageKey = "gentle_user"
+export const userZipStorageKey = "gentle_userZip"
 
 
   
