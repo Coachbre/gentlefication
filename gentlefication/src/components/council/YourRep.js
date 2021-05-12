@@ -2,17 +2,21 @@ import { React, useEffect, useState } from 'react';
 import { YourRepCard } from "../council/YourRepCard";
 import { repByZipcode } from "../../modules/CouncilManager";
 import { getUserId } from "../../modules/UserInfoManager";
+import { userStorageKey, userZipStorageKey } from "../auth/authSettings";
 
 export const YourRep = () => {
 
-    const currentUser = JSON.parse(sessionStorage.getItem("gentle_user"))
-    const [yourRep, setYourRep] = useState([]);
+    const currentUser = JSON.parse(sessionStorage.getItem(userStorageKey))
+    const currentUserZip = JSON.parse(sessionStorage.getItem(userZipStorageKey))
+
+    const [repsByZip, setRepsByZip] = useState([]);
 
     const getYourRep = () => {
 
-        return repByZipcode()
-            .then((response) => {
-                setYourRep(response)
+        return repByZipcode(currentUserZip)
+            .then((matchingDistricts) => {
+                setRepsByZip(matchingDistricts)
+
             });
     };
 
@@ -22,14 +26,18 @@ export const YourRep = () => {
 
     return (
         <div>
-            <h1> who is your council rep</h1>
-            <div>
-                
+            {repsByZip.map(districtObj => {
+                return (
+                    <ul>
                         <YourRepCard
-                      
+                            key={districtObj.id}
+                            district={districtObj}
                         />
-                    
-            </div>
+                    </ul>
+                )
+            })}
+
+
         </div>
     )
 }

@@ -62,7 +62,6 @@
     {
       "name": "Monthly East Ridge Neighborhood Association meeting",
       "date": "5/20/2021",
-      "time": "18:00",
       "location": "community center",
       "organizationId": 4,
       "description": "Community meeting to discuss upcoming local election",
@@ -71,7 +70,6 @@
     {
       "name": "Basketball Tournament",
       "date": "5/15/2021",
-      "time": "15:00",
       "location": "the courts",
       "organizationId": 4,
       "description": "3 on 3 championship game",
@@ -80,7 +78,6 @@
     {
       "name": "Community Clean-up",
       "date": "6/02/2021",
-      "time": "17:00",
       "location": "the streets",
       "organizationId": 1,
       "description": "Stop littering campaign",
@@ -89,7 +86,6 @@
     {
       "name": "Block Party",
       "date": "7/02/2021",
-      "time": "13:00",
       "location": "your neighborhood",
       "organizationId": 3,
       "description": "Party Hard with the next door neighbor",
@@ -98,10 +94,10 @@
   ],
   "savedEvents": [
     {
-      "eventId": 1,
+      "id": 1,
       "userId": 1,
-      "notes": "",
-      "id": 1
+      "eventId": 1,
+      "notes": "Buy snacks.. no peanuts"
     },
     {
       "eventId": 4,
@@ -114,6 +110,30 @@
       "userId": 1,
       "notes": "",
       "id": 3
+    },
+    {
+      "eventId": 1,
+      "userId": 1,
+      "notes": "",
+      "id": 4
+    },
+    {
+      "eventId": 3,
+      "userId": 1,
+      "notes": "",
+      "id": 5
+    },
+    {
+      "eventId": 1,
+      "userId": 1,
+      "notes": "",
+      "id": 6
+    },
+    {
+      "eventId": 2,
+      "userId": 1,
+      "notes": "",
+      "id": 7
     }
   ],
   "councilMembers": [

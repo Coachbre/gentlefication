@@ -18,11 +18,12 @@ export const SavedEvents = () => {
 
 
         // returns saved events array from json
+        
         return getSavedInfo(currentUser)
             //fetches json data
             .then((savedEventsFromAPI) => {
                 setSavedEvents(savedEventsFromAPI)
-                //sets 'saveEvents' equal to API response
+                //sets 'savedEvents' equal to API response
 
             });
 
@@ -42,6 +43,7 @@ export const SavedEvents = () => {
     }
 
     useEffect(() => {
+      
         //calls the getSavedEvents function
         getSavedEvents();
     }, []);
