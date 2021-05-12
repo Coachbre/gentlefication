@@ -1,16 +1,14 @@
 
   .navBar {
-        height: 100px;
-
-        border-style: dotted;
+        height: 50px;
         margin: 0px;
  
 
   }
 
   li {
-      flex-direction: row;
-    float: left;
+      /* flex-direction: row; */
+    float: right;
     display: block;
      margin: 20px;
     text-decoration: none;
@@ -29,11 +27,11 @@
   }
 
 .log-out {
-    float: right !important;
+    
 }
 
 .navLogo {
-
+  float: left !important;
 }
 
 

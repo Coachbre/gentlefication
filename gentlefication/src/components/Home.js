@@ -5,17 +5,20 @@ import { OrgSpotLight } from "./organizations/OrgSpotLight";
 import './Home.css';
 
 export const Home = () => {
-    return (<>
-        <h1>HOME</h1>
+    return (
+        <>
+            <section id="home-screen">
+                <h1>HOME</h1>
 
-        <div className="events">
-            <SavedEvents />
-        </div>
-        
-        <aside>
-            <YourRep />
-            <OrgSpotLight />
-        </aside>
-    </>
+                <div className="homeEvents">
+                    <SavedEvents />
+                </div>
+
+                <aside className="home-aside">
+                    <YourRep />
+                    <OrgSpotLight />
+                </aside>
+            </section>
+        </>
     )
 }

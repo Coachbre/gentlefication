@@ -42,9 +42,7 @@ export const Orgs = () => {
                     )
                 })}
             </div>
-            <aside>
-                {/* <SelectedOrgEvents /> */}
-            </aside>
+        
         </div>
 
     );
