@@ -4,7 +4,6 @@
       "name": "bre",
       "email": "bre@bre.com",
       "zipcode": 37921,
-      "organization": false,
       "id": 1
     },
     {
@@ -18,6 +17,36 @@
       "name": "Nala Coach",
       "zipcode": 37701,
       "id": 7
+    },
+    {
+      "email": "user@user.com",
+      "name": "user user",
+      "zipcode": 12345,
+      "id": 8
+    },
+    {
+      "email": "me@me.com",
+      "name": "me me",
+      "zipcode": 23456,
+      "id": 9
+    },
+    {
+      "email": "user2@user.com",
+      "name": "user2 user2",
+      "zipcode": 23456,
+      "id": 10
+    },
+    {
+      "email": "new@home.com",
+      "name": "new d",
+      "zipcode": 34567,
+      "id": 11
+    },
+    {
+      "email": "new2@new.com",
+      "name": "ffff ffff",
+      "zipcode": 34567,
+      "id": 12
     }
   ],
   "organizations": [
@@ -112,28 +141,16 @@
       "id": 3
     },
     {
-      "eventId": 1,
-      "userId": 1,
-      "notes": "",
-      "id": 4
-    },
-    {
-      "eventId": 3,
-      "userId": 1,
-      "notes": "",
-      "id": 5
-    },
-    {
-      "eventId": 1,
-      "userId": 1,
-      "notes": "",
-      "id": 6
-    },
-    {
       "eventId": 2,
       "userId": 1,
       "notes": "",
       "id": 7
+    },
+    {
+      "eventId": 1,
+      "userId": 8,
+      "notes": "",
+      "id": 8
     }
   ],
   "councilMembers": [

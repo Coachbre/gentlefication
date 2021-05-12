@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { useHistory, Link } from "react-router-dom"
-import { authApi, userStorageKey } from "./authSettings"
+import { authApi, userStorageKey, userZipStorageKey } from "./authSettings"
 
 import "./Login.css";
 import Button from '@material-ui/core/Button';
@@ -58,6 +58,7 @@ export const Register = () => {
                         .then(createdUser => {
                             if (createdUser.hasOwnProperty("id")) {
                                 sessionStorage.setItem(userStorageKey, createdUser.id)
+                                sessionStorage.setItem(userZipStorageKey, createdUser.zipcode)
                                 history.push("/")
                             }
                         })

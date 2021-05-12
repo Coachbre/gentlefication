@@ -5,7 +5,7 @@ import { React, useEffect, useState } from 'react';
 import { getEventOrg, addToSavedList, getEventById, getSavedInfo, savedEventRemoval } from '../../modules/EventsManager';
 import { SavedPreview } from './SavedEventCard';
 import { EventCard } from './EventCard';
-import './Events.css';
+
 
 
 export const Events = () => {
@@ -61,7 +61,7 @@ export const Events = () => {
 
 
     }, []);
-    console.log('this is saved', savedEvents)
+ 
     //initially runs with an empty array, then ^^ useEffect() runs after
     return (
         <>
