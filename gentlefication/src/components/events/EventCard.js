@@ -26,6 +26,6 @@ export const EventCard = ({event, handleAddToList}) => (
         <div className="eventTime"> DATE: {event.date}</div>
         <div className="eventLocation"> LOCATION: {event.location}</div>
         <div className="eventDes"> {event.description}</div>
-        <Button type="button" className="saveButton" onClick={() => handleAddToList(event)}>Save</Button>
+        <Button type="button" className="saveButton" onClick={() => handleAddToList(event)}>ADD TO LIST</Button>
     </section>
 )
