@@ -59,9 +59,9 @@ export const SavedEvents = () => {
                         
                         <ul>
                             <SavedEventCard
-                                key={savedEventObj.id}
+                                id={savedEventObj.id}
                                 //unique key used by react (not required, but good convention)
-
+                                key={savedEventObj.id}
                                 savedEvent={savedEventObj}
                                 // savedEventObj (each saved event in the array) is now equal to 'savedEvent' (prop passed into SavedEventCard)
                                 handleDelete={handleDelete}
