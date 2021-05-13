@@ -1,4 +1,16 @@
 // handles functions related to editing event notes
+import Button from '@material-ui/core/Button';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import TextField from '@material-ui/core/TextField';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+// import Link from '@material-ui/core/Link';
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+
 
 import { useState, useEffect } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
@@ -52,6 +64,10 @@ export const NoteEdit = () => {
         //pushes updated event notes and reloads home dashboard
     };
 
+    const handleCancel = () => {
+        return history.push("/")
+    }
+
     useEffect(() => {
    
     
@@ -87,14 +103,14 @@ export const NoteEdit = () => {
                 </div>
             </fieldset>
 
-            <button type="button" disabled={isLoading} className="note-update" onClick={updateExistingSavedEvent} >
+            <Button type="button" disabled={isLoading} className="note-update" onClick={updateExistingSavedEvent} >
                 Update
-            </button>
+            </Button>
 
             <div>
-                <Link to={`/`} >
-                    <button className="cancel-note">Cancel</button>
-                </Link>
+               
+                    <Button type="button" className="cancel-note" onClick={handleCancel}>Cancel</Button>
+              
             </div>
 
 

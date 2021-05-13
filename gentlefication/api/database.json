@@ -123,40 +123,34 @@
   ],
   "savedEvents": [
     {
-      "id": 1,
-      "userId": 1,
-      "eventId": 1,
-      "notes": "Buy snacks.. no peanuts"
-    },
-    {
-      "eventId": 4,
-      "userId": 1,
-      "notes": "",
-      "id": 2
-    },
-    {
       "eventId": 1,
       "userId": 8,
       "notes": "",
       "id": 8
     },
     {
-      "eventId": 2,
-      "userId": 1,
-      "notes": "",
-      "id": 9
-    },
-    {
-      "eventId": 3,
-      "userId": 1,
-      "notes": "",
-      "id": 10
-    },
-    {
       "eventId": 1,
       "userId": 9,
       "notes": "",
       "id": 11
+    },
+    {
+      "id": 12,
+      "userId": 1,
+      "eventId": 1,
+      "notes": "Discuss speed bumps"
+    },
+    {
+      "id": 13,
+      "userId": 1,
+      "eventId": 3,
+      "notes": "Bring extra gloves"
+    },
+    {
+      "eventId": 2,
+      "userId": 1,
+      "notes": "",
+      "id": 14
     }
   ],
   "councilMembers": [

@@ -2,7 +2,7 @@
 //handles add events to saved list ******************
 
 import { React, useEffect, useState } from 'react';
-import { getEventOrg, addToSavedList, getEventById, getSavedInfo, savedEventRemoval } from '../../modules/EventsManager';
+import { getEventOrg, addToSavedList, getSavedInfo, savedEventRemoval } from '../../modules/EventsManager';
 import { SavedPreview } from './SavedEventCard';
 import { EventCard } from './EventCard';
 
@@ -39,13 +39,25 @@ export const Events = () => {
             //logs current users id # as userId
             notes: ""
         }
-        console.log(saved)
+  
         addToSavedList(saved)
             .then(() => getSavedInfo(currentUser)
                 .then((infoFromAPI) => {
                     setSavedEvents(infoFromAPI)
                 }));
     };
+
+    const handleDelete = id => {
+        savedEventRemoval(id)
+            //handleDelete calls savedEventRemoval() from event manager
+            .then(() => getSavedInfo(currentUser)
+                // currentUser is passed in (to get specific user info).. if not, nothing is returned
+                .then((infoFromAPI) => {
+                    setSavedEvents(infoFromAPI)
+                    //returns new array
+                }))
+        
+    }
 
     //******************************************* */
 
@@ -98,7 +110,9 @@ export const Events = () => {
                         
                             <SavedPreview
                                 key={savedEventObj.id}
-                                savedEvent={savedEventObj} />
+                                savedEvent={savedEventObj}
+                                handleDelete={handleDelete}
+                                 />
 
 
                     )

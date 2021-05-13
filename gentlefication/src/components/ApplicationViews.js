@@ -8,8 +8,6 @@ import { Register } from "./auth/Register";
 import { Home } from "./Home";
 
 import { Events } from "./events/Events";
-import { SavedEvents } from "./events/SavedEvents";
-import { SavedEventsPreview } from "./events/SavedEventsPreview";
 import { NoteEdit } from "./events/EditNotes";
 
 import { Orgs } from "./organizations/OrgList";
