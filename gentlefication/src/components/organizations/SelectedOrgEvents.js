@@ -1,4 +1,5 @@
 //shows selected organizations events
+import Button from '@material-ui/core/Button';
 
 import { React, useState, useEffect } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
@@ -9,6 +10,7 @@ import { getOrgEventById } from '../../modules/OrgManager';
 
 export const EventsByOrg = () => {
     const { organizationId } = useParams();
+    const history = useHistory()
 
     const [matchingEvents, setMatchingEvents] = useState([]);
 
@@ -20,6 +22,10 @@ export const EventsByOrg = () => {
         }))
     }
     //write comment here 
+
+    const handleBackToMain = () => {
+        return history.push("/organizations")
+    }
     
     useEffect(() => {
         getMatchingEvents();
@@ -28,11 +34,13 @@ export const EventsByOrg = () => {
     return (
         <div>
             <h1 className="eventListHeader">EVENTS</h1>
+                <Button type="button" className="backButton" onClick={() => handleBackToMain()}>BACK TO RESOURCES</Button>
             <div>
                 {matchingEvents.map(orgEventObj => {
-                      
- 
-                        return (
+                    
+                    
+                    return (
+                    
                             <ul>
                                 <OrgEventCard
                                     key={orgEventObj.id}
@@ -43,6 +51,7 @@ export const EventsByOrg = () => {
 
                                 />
                             </ul>
+                     
                         )
                     
 

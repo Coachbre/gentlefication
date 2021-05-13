@@ -16,14 +16,14 @@ export const YourRep = () => {
         return repByZipcode(currentUserZip)
             .then((matchingDistricts) => {
                 setRepsByZip(matchingDistricts)
-
             });
-    };
-
-    useEffect(() => {
-        getYourRep();
-    }, []);
-
+        };
+        
+        useEffect(() => {
+            getYourRep();
+        }, []);
+    
+        console.log(repsByZip)
     return (
         <div>
             {repsByZip.map(districtObj => {

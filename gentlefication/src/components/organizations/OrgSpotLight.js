@@ -13,7 +13,6 @@ export const OrgSpotLight = () => {
        //may need to be updated if organization array length changes
            .then(randomOrg => {
                 setSpotLightId(randomOrg);
-                console.log(randomOrg)
            });
        
    }
