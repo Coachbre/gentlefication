@@ -1,6 +1,6 @@
 import { Button } from '@material-ui/core';
 import { React, useEffect, useState } from 'react';
-import { getRandomId } from '../../modules/OrgManager';
+import { getOrgById } from '../../modules/OrgManager';
 import { SpotLightCard } from './SpotLightCard';
 
 export const OrgSpotLight = () => {
@@ -9,10 +9,11 @@ export const OrgSpotLight = () => {
 
 
    const refreshSpotLight = () => {
-       getRandomId(id)
+       getOrgById((Math.floor(Math.random() * 4)) + 1)
+       //may need to be updated if organization array length changes
            .then(randomOrg => {
                 setSpotLightId(randomOrg);
-                console.log(spotLightId)
+                console.log(randomOrg)
            });
        
    }

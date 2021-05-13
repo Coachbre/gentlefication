@@ -20,11 +20,11 @@ export const SpotLightCard = ({spotLight, refreshSpotLight}) => {
     return ( 
     <>
         <div className="org-spotlight">
-        {/* <img className="orgImage" src={spotLight.image} alt="Local organization image" />
+        <img className="orgImage" src={spotLight.image} alt="Local organization image" />
            <h3>
                {spotLight.name}
            </h3>
-           <p> {spotLight.description}</p> */}
+           <p> {spotLight.description}</p>
            <Button type="button" onClick={() => refreshSpotLight()}>get new</Button>
         </div>
         </>
