@@ -56,6 +56,7 @@ export const SavedEvents = () => {
                 {savedEvents.map(savedEventObj => {
                     //iterates over the array of saved events
                     return (
+                        
                         <ul>
                             <SavedEventCard
                                 key={savedEventObj.id}

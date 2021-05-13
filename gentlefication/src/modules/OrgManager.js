@@ -19,3 +19,14 @@ export const getOrgEventById = (id) => {
     .then(result => result.json())
 }
 
+export const getRandomId = (id) => {
+    return fetch(`${remoteURL}/organizations/${id}`)
+    .then(result => result.json())
+    .then(organizations => {
+        const randomIndex =  Math.floor(Math.random() * organizations.length);
+        //takes the number of objects in the org array and returns a whole number between 0 and that #
+        const randomOrg = organizations[randomIndex];
+        //pulls out the organization object at the given index # (randomIndex)
+        return randomOrg; 
+    });
+}
