@@ -123,40 +123,34 @@
   ],
   "savedEvents": [
     {
-      "id": 1,
-      "userId": 1,
-      "eventId": 1,
-      "notes": "Buy snacks.. no peanuts"
-    },
-    {
-      "eventId": 4,
-      "userId": 1,
-      "notes": "",
-      "id": 2
-    },
-    {
       "eventId": 1,
       "userId": 8,
       "notes": "",
       "id": 8
     },
     {
+      "id": 9,
+      "userId": 1,
       "eventId": 2,
-      "userId": 1,
-      "notes": "",
-      "id": 9
-    },
-    {
-      "eventId": 3,
-      "userId": 1,
-      "notes": "",
-      "id": 10
+      "notes": "Registration ends 5/13"
     },
     {
       "eventId": 1,
       "userId": 9,
       "notes": "",
       "id": 11
+    },
+    {
+      "eventId": 1,
+      "userId": 1,
+      "notes": "",
+      "id": 12
+    },
+    {
+      "id": 13,
+      "userId": 1,
+      "eventId": 3,
+      "notes": "Bring extra gloves"
     }
   ],
   "councilMembers": [
