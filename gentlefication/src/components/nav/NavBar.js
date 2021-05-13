@@ -38,17 +38,11 @@ export const NavBar = () => {
                         <img src={Logo} alt="logo" />
                     </Link>
                 </li>
-
-                <li className="nav-item">
-                    <Link to="/Events">
-                        COMMUNITY EVENTS
-                    </Link>
-                </li>
-
-                <li className="nav-item">
-                    <Link to="/Organizations">
-                        LOCAL RESOURCES
-                    </Link>
+                
+                <li className="log-out">
+                    <Button onClick={handleLogout}>
+                        LOG OUT
+                    </Button>
                 </li>
 
                 <li className="nav-item">
@@ -57,11 +51,19 @@ export const NavBar = () => {
                     </Link>
                 </li>
 
-                <li className="log-out">
-                    <Button onClick={handleLogout}>
-                        LOG OUT
-                    </Button>
+                <li className="nav-item">
+                    <Link to="/Organizations">
+                        LOCAL RESOURCES
+                    </Link>
                 </li>
+                
+                <li className="nav-item">
+                    <Link to="/Events">
+                        COMMUNITY EVENTS
+                    </Link>
+                </li>
+
+
             </ul>
 
         </nav>
