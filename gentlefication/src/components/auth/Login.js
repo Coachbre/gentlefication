@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, Redirect, useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { authApi, userStorageKey, userZipStorageKey } from "./authSettings";
 
 
@@ -90,6 +90,17 @@ export const Login = () => {
 
 
     return (
+        
+        <body id="loginPage">
+
+<div class="crossfade">
+  <figure></figure>
+  <figure></figure>
+  <figure></figure>
+  <figure></figure>
+  <figure></figure>
+</div>
+
         <main className="container--login">
 
             <dialog className="dialog dialog--auth" open={existDialog}>
@@ -100,7 +111,7 @@ export const Login = () => {
             <Container component="main" maxWidth="xs">
                 <CssBaseline />
 
-                <div className={classes.paper}>
+                <div className={classes.paper} id="loginContainer">
 
                 <img className="logo" src={Logo} alt="logo" />
 
@@ -111,6 +122,7 @@ export const Login = () => {
                     <form className={classes.form} noValidate onSubmit={handleLogin}>
 
                         <TextField
+                        className="loginInput"
                             variant="outlined"
                             margin="normal"
                             required
@@ -147,6 +159,7 @@ export const Login = () => {
 
             </Container>
         </main>
+        </body>
     )
 }
 
