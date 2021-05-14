@@ -123,10 +123,10 @@
   ],
   "savedEvents": [
     {
-      "eventId": 1,
+      "id": 8,
       "userId": 8,
-      "notes": "",
-      "id": 8
+      "eventId": 1,
+      "notes": "event for 'user' profile"
     },
     {
       "eventId": 1,
@@ -135,22 +135,28 @@
       "id": 11
     },
     {
-      "id": 12,
-      "userId": 1,
-      "eventId": 1,
-      "notes": "Discuss need for speed bumps"
-    },
-    {
       "id": 13,
       "userId": 1,
       "eventId": 3,
-      "notes": "Bring extra gloves"
+      "notes": "no gloves"
     },
     {
-      "id": 14,
-      "userId": 1,
+      "eventId": 4,
+      "userId": 8,
+      "notes": "",
+      "id": 15
+    },
+    {
       "eventId": 2,
-      "notes": "do not bring football"
+      "userId": 8,
+      "notes": "",
+      "id": 16
+    },
+    {
+      "eventId": 2,
+      "userId": 1,
+      "notes": "",
+      "id": 18
     }
   ],
   "councilMembers": [

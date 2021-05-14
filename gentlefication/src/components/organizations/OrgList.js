@@ -31,14 +31,12 @@ export const Orgs = () => {
             <div className="orgCard">
                 {orgs.map(orgObj => {
                     return (
-                        <ul>
                             <OrgCard
                                 key={orgObj.id}
                                 //good convention
                                 org={orgObj}
                             //orgObj (each organization in array) is set equal to 'org'
                             />
-                        </ul>
                     )
                 })}
             </div>
