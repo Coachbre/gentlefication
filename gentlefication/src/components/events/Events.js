@@ -104,13 +104,13 @@ export const Events = () => {
             <aside>
             <h1 className="eventListHeader">YOUR SAVED EVENTS</h1>
 
-                {savedEvents.map(savedEventObj => {
+                {savedEvents.map(savedEventPreviewObj => {
 
                     return (
                         
                             <SavedPreview
-                                key={savedEventObj.id}
-                                savedEvent={savedEventObj}
+                                key={savedEventPreviewObj.id}
+                                savedEventPreview={savedEventPreviewObj}
                                 handleDelete={handleDelete}
                                  />
 

@@ -138,7 +138,7 @@
       "id": 12,
       "userId": 1,
       "eventId": 1,
-      "notes": "Discuss speed bumps"
+      "notes": "Discuss need for speed bumps"
     },
     {
       "id": 13,
@@ -147,10 +147,10 @@
       "notes": "Bring extra gloves"
     },
     {
-      "eventId": 2,
+      "id": 14,
       "userId": 1,
-      "notes": "",
-      "id": 14
+      "eventId": 2,
+      "notes": "do not bring football"
     }
   ],
   "councilMembers": [

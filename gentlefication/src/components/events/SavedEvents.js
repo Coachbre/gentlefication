@@ -18,7 +18,7 @@ export const SavedEvents = () => {
 
 
         // returns saved events array from json
-        
+
         return getSavedInfo(currentUser)
             //fetches json data
             .then((savedEventsFromAPI) => {
@@ -39,11 +39,11 @@ export const SavedEvents = () => {
                     setSavedEvents(infoFromAPI)
                     //returns new array
                 }))
-        
+
     }
 
     useEffect(() => {
-      
+
         //calls the getSavedEvents function
         getSavedEvents();
     }, []);
@@ -56,12 +56,12 @@ export const SavedEvents = () => {
                 {savedEvents.map(savedEventObj => {
                     //iterates over the array of saved events
                     return (
-                        
+
                         <ul>
                             <SavedEventCard
-                                key={savedEventObj.id}
+                                id={savedEventObj.id}
                                 //unique key used by react (not required, but good convention)
-
+                                key={savedEventObj.id}
                                 savedEvent={savedEventObj}
                                 // savedEventObj (each saved event in the array) is now equal to 'savedEvent' (prop passed into SavedEventCard)
                                 handleDelete={handleDelete}
