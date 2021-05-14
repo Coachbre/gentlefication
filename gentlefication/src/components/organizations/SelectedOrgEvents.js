@@ -41,7 +41,6 @@ export const EventsByOrg = () => {
                     
                     return (
                     
-                            <ul>
                                 <OrgEventCard
                                     key={orgEventObj.id}
                                     //unique key used by react (not required, but good convention)
@@ -50,7 +49,6 @@ export const EventsByOrg = () => {
                                 // savedEventObj (each saved event in the array) is now equal to 'savedEvent' (prop passed into SavedEventCard)
 
                                 />
-                            </ul>
                      
                         )
                     

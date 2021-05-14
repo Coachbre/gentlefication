@@ -13,7 +13,8 @@ import '../Home.css'
 
 import React from 'react';
 
-export const YourRepCard = ({district}) => (
+export const YourRepCard = ({district}) => {
+return (
     <section className="repCardHome">
         <h1>WHOS WORKING FOR YOU?</h1>
         <img className="memberImageHome" src={district.councilMembers[0].image} alt="council member headshot" />
@@ -30,5 +31,5 @@ export const YourRepCard = ({district}) => (
         </div>
 
     </section>
-)
+)}
 //{district.councilMembers[0].image} starts with the object passed in via props, then accesses councilMembers array and returns index 0 (first object)

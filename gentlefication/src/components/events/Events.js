@@ -35,11 +35,11 @@ export const Events = () => {
         const saved = {
             eventId: parseInt(eventObj.id),
             userId: currentUser,
-           
+
             //logs current users id # as userId
             notes: ""
         }
-  
+
         addToSavedList(saved)
             .then(() => getSavedInfo(currentUser)
                 .then((infoFromAPI) => {
@@ -56,7 +56,7 @@ export const Events = () => {
                     setSavedEvents(infoFromAPI)
                     //returns new array
                 }))
-        
+
     }
 
     //******************************************* */
@@ -73,7 +73,7 @@ export const Events = () => {
 
 
     }, []);
- 
+
     //initially runs with an empty array, then ^^ useEffect() runs after
     return (
         <>
@@ -81,18 +81,27 @@ export const Events = () => {
                 <h1 className="eventListHeader">COME GET TO KNOW YOUR NEIGHBORS!</h1>
                 <div className="eventCard">
                     {events.map(eventObj => {
-                        //iterates over the array of events
+
+                        let isDisabled = false
+
+                        const savedItem = savedEvents.find(savedEventObj => {
+                            return savedEventObj.eventId === eventObj.id
+                        })
+                        if (savedItem) {
+                            isDisabled = true
+                        }
+                        console.log(isDisabled)
                         return (
 
-                            <ul>
-                                <EventCard
-                                    key={eventObj.id}
-                                    //unique key used by react (not required, but good convention)
-                                    event={eventObj}
-                                    // eventObj (each event in the array) is now equal to 'event' (prop passed into EventCard)
-                                    handleAddToList={handleAddToList}
-                                />
-                            </ul>
+
+                            <EventCard
+                                key={eventObj.id}
+                                //unique key used by react (not required, but good convention)
+                                event={eventObj}
+                                // eventObj (each event in the array) is now equal to 'event' (prop passed into EventCard)
+                                handleAddToList={handleAddToList}
+                                isDisabled={isDisabled}
+                            />
 
 
                         )
@@ -102,17 +111,17 @@ export const Events = () => {
 
             </div>
             <aside>
-            <h1 className="eventListHeader">YOUR SAVED EVENTS</h1>
+                <h1 className="eventListHeader">YOUR SAVED EVENTS</h1>
 
                 {savedEvents.map(savedEventPreviewObj => {
 
                     return (
-                        
-                            <SavedPreview
-                                key={savedEventPreviewObj.id}
-                                savedEventPreview={savedEventPreviewObj}
-                                handleDelete={handleDelete}
-                                 />
+
+                        <SavedPreview
+                            key={savedEventPreviewObj.id}
+                            savedEventPreview={savedEventPreviewObj}
+                            handleDelete={handleDelete}
+                        />
 
 
                     )

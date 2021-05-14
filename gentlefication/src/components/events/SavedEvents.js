@@ -57,7 +57,6 @@ export const SavedEvents = () => {
                     //iterates over the array of saved events
                     return (
 
-                        <ul>
                             <SavedEventCard
                                 id={savedEventObj.id}
                                 //unique key used by react (not required, but good convention)
@@ -66,7 +65,6 @@ export const SavedEvents = () => {
                                 // savedEventObj (each saved event in the array) is now equal to 'savedEvent' (prop passed into SavedEventCard)
                                 handleDelete={handleDelete}
                             />
-                        </ul>
                     )
                 })}
             </div>

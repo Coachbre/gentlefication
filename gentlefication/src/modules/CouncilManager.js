@@ -3,8 +3,7 @@ import {  userStorageKey, userZipStorageKey } from "../components/auth/authSetti
 
 const remoteURL = "http://localhost:8088"
 // 8088 is the port chosen to host json server
-const currentUser = JSON.parse(sessionStorage.getItem("gentle_user"))
-const currentUserZip = JSON.parse(sessionStorage.getItem(userZipStorageKey))
+
 
 export const getAllCouncil= () => {
     return fetch(`${remoteURL}/councilMembers/`)
@@ -19,8 +18,8 @@ export const getCouncilDistricts= () => {
     //expand pulls district ID from council array
 }
 
-export const repByZipcode = () => {
-    return fetch(`${remoteURL}/districts/?zipcode=${currentUserZip}&_embed=councilMembers`)
+export const repByZipcode = (zip) => {
+    return fetch(`${remoteURL}/districts/?zipcode=${zip}&_embed=councilMembers`)
     .then(result => result.json())
     //fetches each district by user zipcode then provides council member with matching districtId
 }

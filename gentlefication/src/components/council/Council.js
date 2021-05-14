@@ -34,7 +34,6 @@ export const Council = () => {
             <div className="memberCard">
                 {council.map(councilObj => {
                     return (
-                        <ul>
                             <CouncilCard
                             key={councilObj.id}
                             //good convention
@@ -43,7 +42,6 @@ export const Council = () => {
                             and will be passed into org card as prop? */
                       
                             />
-                        </ul>
                     )
                 } )}
             </div>
