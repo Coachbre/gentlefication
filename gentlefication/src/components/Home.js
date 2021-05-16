@@ -13,9 +13,11 @@ export const Home = () => {
                     <SavedEvents />
                 </div>
 
-                <aside className="home-aside">
+                <aside>
+                    <div  className="home-aside">
                     <YourRep />
                     <OrgSpotLight />
+                    </div>
                 </aside>
             </section>
         </>

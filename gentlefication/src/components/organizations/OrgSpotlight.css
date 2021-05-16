@@ -1,0 +1,12 @@
+.org-spotlight {
+  
+    background-color: #ffbd59 !important;
+    border-radius: 15px;
+    opacity: 0.9;
+    margin-bottom: 50px;
+    padding: 3px 15px 15px 15px 
+}
+
+.spotLightHeader {
+    text-align: center !important;
+}

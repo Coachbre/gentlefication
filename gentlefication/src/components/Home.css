@@ -4,9 +4,11 @@
     background-image: url('../images/backgrounds/neighbor1.jpg');
    background-repeat: no-repeat;
    background-size: cover;
-   /* position: static; */
    z-index: -1;
-  
+   min-height: 500px;
+   background-attachment: fixed;
+   background-position: center;
+
 }
 
 .homeEvents {
@@ -15,7 +17,7 @@
 
 .home-aside {
  
-    margin-top: 2%; 
+    margin-top: 6%; 
  margin-left: 20%;
 
 }

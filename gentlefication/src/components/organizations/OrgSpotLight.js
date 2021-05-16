@@ -3,6 +3,8 @@ import { React, useEffect, useState } from 'react';
 import { getOrgById } from '../../modules/OrgManager';
 import { SpotLightCard } from './SpotLightCard';
 
+import './OrgSpotlight.css'
+
 export const OrgSpotLight = () => {
 
     const [spotLightId, setSpotLightId] = useState([]);
@@ -24,14 +26,14 @@ export const OrgSpotLight = () => {
 
    return (
        <>
-       <h1>featured organization</h1>
-       
+       <div className="org-spotlight">
        {
            <SpotLightCard
            key={spotLightId}
            spotLight={spotLightId}
            refreshSpotLight={refreshSpotLight} />
        }
+       </div>
        </>
    )
     

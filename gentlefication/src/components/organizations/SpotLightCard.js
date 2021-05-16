@@ -13,21 +13,28 @@ import Container from '@material-ui/core/Container';
 import Logo from "../../images/logo.png";
 
 import { React, useEffect, useState } from 'react';
+import './OrgSpotlight.css'
 
 
-export const SpotLightCard = ({spotLight, refreshSpotLight}) => {
+export const SpotLightCard = ({ spotLight, refreshSpotLight }) => {
 
-    return ( 
-    <>
-        <div className="org-spotlight">
-        <img className="orgImage" src={spotLight.image} alt="Local organization image" />
-           <h3>
-               {spotLight.name}
-           </h3>
-           <p> {spotLight.description}</p>
-           <Button type="button" onClick={() => refreshSpotLight()}>get new</Button>
-        </div>
+    return (
+        <>
+
+          
+
+                <p classname="spotLightHeader">
+                    <h2>FEATURED ORGANIZATION</h2>
+                    <img className="orgImage" src={spotLight.image} alt="Local organization image" />
+                    <h3>
+                        {spotLight.name}
+                    </h3>
+                </p>
+
+                <p> {spotLight.description}</p>
+                <Button type="button" onClick={() => refreshSpotLight()}>VIEW NEXT</Button>
+
         </>
     )
-    
+
 }

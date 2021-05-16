@@ -16,20 +16,18 @@ import React from 'react';
 export const YourRepCard = ({district}) => {
 return (
     <section className="repCardHome">
+       
+       <div className="memberHeader">
         <h2>WHOS WORKING FOR YOU?</h2>
-        
-        
-        <div className="memberHeader">
         <img className="memberImageHome" src={district.councilMembers[0].image} alt="council member headshot" />
         <h3 className="memberName">City Council Member: {district.councilMembers[0].name}</h3>
-        
-        </div>
-        <div className="membercontact">
+    </div>
+        {/* <div className="membercontact"> */}
         <h4>CONTACT INFO</h4>
         <div className="memberPhone">PHONE: {district.councilMembers[0].phone}</div>
         <div className="memberEmail">EMAIL: {district.councilMembers[0].email}</div>
         <Button className="councilWebsiteButton"><a href={district.councilMembers[0].url}>Visit Website</a></Button>
-        </div>
+        {/* </div> */}
 
     </section>
 )}
