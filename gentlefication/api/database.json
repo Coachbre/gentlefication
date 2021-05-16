@@ -141,22 +141,28 @@
       "notes": "no gloves"
     },
     {
-      "eventId": 4,
-      "userId": 8,
-      "notes": "",
-      "id": 15
-    },
-    {
-      "eventId": 2,
-      "userId": 8,
-      "notes": "",
-      "id": 16
-    },
-    {
       "eventId": 2,
       "userId": 1,
       "notes": "",
       "id": 18
+    },
+    {
+      "eventId": 2,
+      "userId": 8,
+      "notes": "",
+      "id": 19
+    },
+    {
+      "eventId": 3,
+      "userId": 8,
+      "notes": "",
+      "id": 20
+    },
+    {
+      "eventId": 4,
+      "userId": 8,
+      "notes": "",
+      "id": 21
     }
   ],
   "councilMembers": [

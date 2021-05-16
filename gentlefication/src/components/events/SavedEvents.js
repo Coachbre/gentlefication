@@ -50,9 +50,8 @@ export const SavedEvents = () => {
     //returns empty array on first run
     return (
 
-        <div>
-            <h1 className="eventListHeader">UPCOMING EVENTS</h1>
-            <div>
+
+            <div className="savedEventsList">
                 {savedEvents.map(savedEventObj => {
                     //iterates over the array of saved events
                     return (
@@ -67,6 +66,6 @@ export const SavedEvents = () => {
                     )
                 })}
             </div>
-        </div>
+   
     );
 };
