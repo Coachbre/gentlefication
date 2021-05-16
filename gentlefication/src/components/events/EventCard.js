@@ -20,12 +20,12 @@ import './Events.css';
 
 export const EventCard = ({event, handleAddToList, isDisabled}) => (
 // 'event' and 'handleAddToList is a prop being passed in from EventsList() LAST return
-    <section>
+    <section className="eventCard">
+         <Button type="button" className="saveButton" disabled={isDisabled} onClick={() => handleAddToList(event)}>ADD TO LIST</Button>
         <h2 className="eventName">{event.name} </h2>
         <div>HOSTED BY: {event.organization.name}</div>
         <div className="eventTime"> DATE: {event.date}</div>
         <div className="eventLocation"> LOCATION: {event.location}</div>
         <div className="eventDes"> {event.description}</div>
-        <Button type="button" className="saveButton" disabled={isDisabled} onClick={() => handleAddToList(event)}>ADD TO LIST</Button>
     </section>
 )
