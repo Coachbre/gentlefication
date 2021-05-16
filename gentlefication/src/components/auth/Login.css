@@ -6,22 +6,25 @@ Button {
     background-color: #88C3CB !important;
 }
 
-#loginContainer {
- 
-}
-
 .loginInput {
     /* background-color: #F8D2BF; */
       
 }
 
-#loginPage {
-    /* background-image: url("../../images/backgrounds/image2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; */
-
+#homeLoginPage {
+  background-color: none !important;
+  padding: 10px;
+  margin-top: 10%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 80px;
+  border: 2px blue solid;
+ 
 }
 
+body {
+  background-color: none !important;
+}
 .crossfade > figure {
     animation: imageAnimation 30s linear infinite 0s;
     backface-visibility: hidden;
@@ -34,7 +37,7 @@ Button {
     position: absolute;
     top: 0px;
     width: 100%;
-    z-index: 0;
+    z-index: -1;
   }
 
   .crossfade > figure:nth-child(1) { background-image: url('../../images/backgrounds/image2.jpg'); }

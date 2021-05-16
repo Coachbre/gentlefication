@@ -91,7 +91,7 @@ export const Login = () => {
 
     return (
         
-        <body id="loginPage">
+        <body id="homeLoginPage">
 
 <div class="crossfade">
   <figure></figure>
@@ -101,7 +101,7 @@ export const Login = () => {
   <figure></figure>
 </div>
 
-        <main className="container--login">
+        <main className="loginContainer">
 
             <dialog className="dialog dialog--auth" open={existDialog}>
                 <div>User does not exist</div>
