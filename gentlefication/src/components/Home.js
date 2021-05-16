@@ -7,8 +7,8 @@ import './Home.css';
 export const Home = () => {
     return (
         <>
-            <section id="home-screen">
-                <h1>HOME</h1>
+            <section class="pageView">
+                {/* <h1>HOME</h1> */}
 
                 <div className="homeEvents">
                     <SavedEvents />

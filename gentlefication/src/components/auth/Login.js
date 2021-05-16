@@ -122,7 +122,7 @@ export const Login = () => {
                     <form className={classes.form} noValidate onSubmit={handleLogin}>
 
                         <TextField
-                        className="loginInput"
+                        
                             variant="outlined"
                             margin="normal"
                             required

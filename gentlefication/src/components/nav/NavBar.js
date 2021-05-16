@@ -33,13 +33,13 @@ export const NavBar = () => {
         <nav className="navBar">
 
             <ul>
-                <li  className="navLogo">
+                <li className="navLogo">
                     <Link to="/">
                         <img src={Logo} alt="logo" />
                     </Link>
                 </li>
                 
-                <li className="log-out">
+                <li className="nav-item">
                     <Button onClick={handleLogout}>
                         LOG OUT
                     </Button>

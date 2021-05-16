@@ -1,0 +1,18 @@
+.savedEventCard {
+    padding: 3px 15px 90px 15px;
+    margin-bottom: 50px;
+    background-color: #f0e4df !important;
+    border-radius: 15px;
+}
+
+.savedCardButtons {
+    flex: auto;
+    float: right;
+
+}
+
+ .removeButton {
+    float: right !important;
+} 
+
+

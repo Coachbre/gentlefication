@@ -11,35 +11,34 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Logo from "../../images/logo.png";
-import './Events.css';
+import './SavedEvents.css';
 
 
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export const SavedEventCard = ({savedEvent, handleDelete}) => (
-// savedEvent & handleDelete is a prop being passed in from EventsList() LAST return
+export const SavedEventCard = ({ savedEvent, handleDelete }) => (
+    // savedEvent & handleDelete is a prop being passed in from EventsList() LAST return
 
-    <section>
-        
+    <section className="savedEventCard">
+
         <h2 className="name">{savedEvent.event.name}</h2>
-        {/* <div>Organized by: {savedEvent.event.organization}</div> */}
         <div className="eventTime">DATE: {savedEvent.event.date}</div>
         <div className="eventLocation">LOCATION: {savedEvent.event.location}</div>
         <div className="eventDes">DESCRIPTION: {savedEvent.event.description}</div>
         <div className="savedNotes">NOTES: {savedEvent.notes}</div>
+        <div className="savedCardButtons">
+            <Link to={`/savedEvents/edit/${savedEvent.id}`}>
+                <Button className="notesButton" type="button">ADD OR CHANGE YOUR NOTES</Button>
+            </Link>
 
-        <Link to={`/savedEvents/edit/${savedEvent.id}`}>
-        <Button className="saveButton" type="button">ADD OR CHANGE YOUR NOTES</Button>
-        </Link>
-
-        <Button  type="button" className="deleteButton" onClick={() => handleDelete(savedEvent.id)}>REMOVE EVENT</Button>
-  
+            <Button type="button" className="removeButton" onClick={() => handleDelete(savedEvent.id)}>REMOVE EVENT</Button>
+        </div>
     </section>
 )
 
 //preview card of saved events that goes into aside on main events view
-export const SavedPreview = ({savedEventPreview, handleDelete}) => (
+export const SavedPreview = ({ savedEventPreview, handleDelete }) => (
     <section>
         <h2 className="name">{savedEventPreview.event.name} </h2>
         <div className="eventTime"> TIME: {savedEventPreview.event.date} at {savedEventPreview.event.time}</div>

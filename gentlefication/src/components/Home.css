@@ -1,5 +1,5 @@
-#home-screen {
-    background-color: rgba(0, 204, 255, 0.294) !important;
+.pageView {
+    margin-top: 50px !important;
 }
 
 .homeEvents {
