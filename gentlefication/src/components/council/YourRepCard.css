@@ -1,0 +1,26 @@
+.repCardHome {
+
+    align-content: center;
+    background-color: #ffbd59 !important;
+    border-radius: 15px;
+    opacity: 0.9;
+    margin-bottom: 50px;
+    padding: 3px 15px 15px 15px ;
+
+}
+
+.memberHeader {
+    text-align: center;
+}
+
+.memberImageHome {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    align-content: center !important;
+
+}
+
+.councilWebsiteButton {
+    margin-top: 10px !important;
+}

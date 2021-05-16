@@ -1,11 +1,12 @@
 .homePageView {
     display: flex;
-    margin-top: 50px !important;
-    background-image: url('../images/backgrounds/neighbor2.jpg');
+    margin-top: 35px !important;
+    background-image: url('../images/backgrounds/neighbor1.jpg');
    background-repeat: no-repeat;
    background-size: cover;
    /* position: static; */
    z-index: -1;
+  
 }
 
 .homeEvents {
@@ -13,17 +14,9 @@
 }
 
 .home-aside {
-    background-color: #ffbd59;
-    border-radius: 80px;
+ 
+    margin-top: 2%; 
  margin-left: 20%;
- margin-top: 4%;
-    float: right;
-}
-
-.memberImageHome {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    align-content: center;
 
 }
+
