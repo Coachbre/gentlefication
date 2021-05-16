@@ -7,16 +7,17 @@ import './Home.css';
 export const Home = () => {
     return (
         <>
-            <section id="home-screen">
-                <h1>HOME</h1>
+            <section class="homePageView">
 
                 <div className="homeEvents">
                     <SavedEvents />
                 </div>
 
-                <aside className="home-aside">
+                <aside>
+                    <div  className="home-aside">
                     <YourRep />
                     <OrgSpotLight />
+                    </div>
                 </aside>
             </section>
         </>

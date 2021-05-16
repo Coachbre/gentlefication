@@ -1,13 +1,12 @@
 
   .navBar {
         height: 50px;
-        margin: 0px;
- 
-
+   
+        text-decoration: none;
   }
 
-  li {
-      /* flex-direction: row; */
+  .nav-item {
+      
     float: right;
     display: block;
      margin: 20px;
@@ -15,23 +14,18 @@
    
   }
 
+
   a {
       color:black;
       text-decoration: none;
       display: block; 
   }
 
-  a:hover {
-      color: #ffbd59;
-      text-decoration: underline;
-  }
-
-.log-out {
-    
-}
 
 .navLogo {
   float: left !important;
+  display: block;
+ text-decoration: none;
 }
 
 

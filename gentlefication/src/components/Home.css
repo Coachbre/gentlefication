@@ -1,5 +1,14 @@
-#home-screen {
-    background-color: rgba(0, 204, 255, 0.294) !important;
+.homePageView {
+    display: flex;
+    margin-top: 35px !important;
+    background-image: url('../images/backgrounds/neighbor1.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   z-index: -1;
+   min-height: 500px;
+   background-attachment: fixed;
+   background-position: center;
+
 }
 
 .homeEvents {
@@ -7,13 +16,9 @@
 }
 
 .home-aside {
-    background-color: burlywood;
-    border-radius: 80px;
+ 
+    margin-top: 6%; 
+ margin-left: 20%;
+
 }
 
-.memberImageHome {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    align-content: center;
-}

@@ -9,26 +9,25 @@ import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import '../Home.css'
+import './YourRepCard.css'
 
 import React from 'react';
 
 export const YourRepCard = ({district}) => {
 return (
     <section className="repCardHome">
-        <h1>WHOS WORKING FOR YOU?</h1>
+       
+       <div className="memberHeader">
+        <h2>WHOS WORKING FOR YOU?</h2>
         <img className="memberImageHome" src={district.councilMembers[0].image} alt="council member headshot" />
-        
-        <div className="memberHeader">
-        <h2 className="memberName">Knoxville City Council member {district.councilMembers[0].name} serves your District</h2>
-        
-        </div>
-        <div className="membercontact">
-        <h3>CONTACT INFO</h3>
+        <h3 className="memberName">City Council Member: {district.councilMembers[0].name}</h3>
+    </div>
+        {/* <div className="membercontact"> */}
+        <h4>CONTACT INFO</h4>
         <div className="memberPhone">PHONE: {district.councilMembers[0].phone}</div>
         <div className="memberEmail">EMAIL: {district.councilMembers[0].email}</div>
-        <Button className><a href={district.councilMembers[0].url}>Visit Website</a></Button>
-        </div>
+        <Button className="councilWebsiteButton"><a href={district.councilMembers[0].url}>Visit Website</a></Button>
+        {/* </div> */}
 
     </section>
 )}
