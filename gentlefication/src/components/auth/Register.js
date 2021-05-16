@@ -92,7 +92,17 @@ export const Register = () => {
 
 
     return (
+
+
         <main className="container--login">
+
+            <div class="crossfade">
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+                <figure></figure>
+            </div>
 
             <dialog className="dialog dialog--password" open={conflictDialog}>
                 <div>Account with that email address already exists</div>
@@ -101,59 +111,62 @@ export const Register = () => {
 
             <Container component="main" maxWidth="xs">
                 <CssBaseline />
+
                 <div className={classes.paper}>
 
-                    <img className="logo" src={Logo} alt="logo" />
+                    <div id="homeRegisterPage">
 
-                    <form className={classes.form} onSubmit={handleRegister}>
+                        <img className="logo" src={Logo} alt="logo" />
 
-                        <Typography component="h1" variant="h5">
-                            Sign Up!
+                        <form className={classes.form} onSubmit={handleRegister}>
+
+                            <Typography component="h1" variant="h5">
+                                Sign Up!
                     </Typography>
 
-                        <TextField
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
-                            id="firstName"
-                            label="First Name"
-                            name="firstName"
-                            autoComplete="firstName"
-                            autoFocus
-                            value={registerUser.firstName}
-                            onChange={handleInputChange}
-                        />
+                            <TextField
+                                variant="outlined"
+                                margin="normal"
+                                required
+                                fullWidth
+                                id="firstName"
+                                label="First Name"
+                                name="firstName"
+                                autoComplete="firstName"
+                                autoFocus
+                                value={registerUser.firstName}
+                                onChange={handleInputChange}
+                            />
 
-                        <TextField
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
-                            id="lastName"
-                            label="Last Name"
-                            name="lastName"
-                            autoComplete="lastName"
-                            autoFocus
-                            value={registerUser.lastName}
-                            onChange={handleInputChange}
-                        />
+                            <TextField
+                                variant="outlined"
+                                margin="normal"
+                                required
+                                fullWidth
+                                id="lastName"
+                                label="Last Name"
+                                name="lastName"
+                                autoComplete="lastName"
+                                autoFocus
+                                value={registerUser.lastName}
+                                onChange={handleInputChange}
+                            />
 
-                        <TextField
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
-                            id="email"
-                            label="Email Address"
-                            name="email"
-                            autoComplete="email"
-                            autoFocus
-                            value={registerUser.email}
-                            onChange={handleInputChange}
-                        />
+                            <TextField
+                                variant="outlined"
+                                margin="normal"
+                                required
+                                fullWidth
+                                id="email"
+                                label="Email Address"
+                                name="email"
+                                autoComplete="email"
+                                autoFocus
+                                value={registerUser.email}
+                                onChange={handleInputChange}
+                            />
 
-                        {/* <fieldset>
+                            {/* <fieldset>
                     <div> Which type of community asset are you?</div>
 
                     <label htmlFor="checkbox"> Resident </label>
@@ -163,41 +176,42 @@ export const Register = () => {
                     <input type="checkbox" name="OrgCheckbox" id="checkbox" className="form-control" onChange={handleInputChange} />
                     </fieldset> */}
 
-                        <TextField
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
-                            id="zipcode"
-                            label="Zipcode"
-                            name="zipcode"
-                            autoComplete="zipcode"
-                            value={registerUser.zipcode}
-                            onChange={handleInputChange}
-                        />
-
-                        <Grid item>
-
-                            <Button type="submit"
+                            <TextField
+                                variant="outlined"
+                                margin="normal"
+                                required
                                 fullWidth
-                                variant="contained"
-                                className={classes.submit}>
-                                Register & Login
+                                id="zipcode"
+                                label="Zipcode"
+                                name="zipcode"
+                                autoComplete="zipcode"
+                                value={registerUser.zipcode}
+                                onChange={handleInputChange}
+                            />
+
+                            <Grid item>
+
+                                <Button type="submit"
+                                    fullWidth
+                                    variant="contained"
+                                    className={classes.submit}>
+                                    Register & Login
                             </Button>
 
-                        </Grid>
-                        <Grid item>
+                            </Grid>
+                            <Grid item>
 
-                            <Link to="/login"
-                                fullWidth
-                                variant="contained"
-                                className={classes.submit}>
-                                Cancel
+                                <Link to="/login"
+                                    fullWidth
+                                    variant="contained"
+                                    className={classes.submit}>
+                                    Cancel
                             </Link>
 
-                        </Grid>
+                            </Grid>
 
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </Container>
         </main>

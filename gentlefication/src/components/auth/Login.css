@@ -9,16 +9,22 @@ Button {
 
 #homeLoginPage {
   background-color: #f0e4df !important;
-  padding: 10px;
-  margin-top: 2%;
+  /* padding: 10px; */
+  margin-top: 10%;
   margin-left: 30%;
   margin-right: 30%;
   border-radius: 15px;
 }
 
-body {
-  background-color: none !important;
+#homeRegisterPage {
+  background-color: #f0e4df !important;
+  padding: 10px;
+  margin-top: 20%;
+   /* margin-left: 30%; */
+  /* margin-right: 30%;   */
+  border-radius: 15px; 
 }
+
 
 .crossfade > figure {
     animation: imageAnimation 30s linear infinite 0s;
@@ -33,6 +39,7 @@ body {
     top: 0px;
     width: 100%;
     z-index: -1;
+    background-size: cover;
   }
 
   .crossfade > figure:nth-child(1) { background-image: url('../../images/backgrounds/image2.jpg'); }
