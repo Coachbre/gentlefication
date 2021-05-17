@@ -108,7 +108,7 @@ export const Events = () => {
 
 
             </div>
-            <aside>
+            <aside className="previewAside">
                 <h1 className="eventListHeader">YOUR SAVED EVENTS</h1>
 
                 {savedEvents.map(savedEventPreviewObj => {

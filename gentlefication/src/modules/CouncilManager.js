@@ -1,5 +1,4 @@
 // Council manager handles all council member related fetch calls
-import {  userStorageKey, userZipStorageKey } from "../components/auth/authSettings";
 
 const remoteURL = "http://localhost:8088"
 // 8088 is the port chosen to host json server

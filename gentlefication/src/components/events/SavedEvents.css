@@ -1,17 +1,17 @@
 .savedEventsList {
-    margin-left: 15%;
-    margin-top: 4%;
+    /* margin-right: 15%;
+    margin-top: 4%; */
  
     
 }
 
 .savedEventCard {
-    padding: 3px 15px 90px 15px;
+    padding: 3px 15px 100px 15px;
     margin-bottom: 50px;
     background-color: #ffbd59 !important;
     border-radius: 15px;
     opacity: 0.9;
-  
+    width: 60em;
 }
 
 .savedCardButtons {
@@ -25,4 +25,10 @@
     margin-top: 10px !important;
 } 
 
-
+.savedPreviewCard {
+    background-color: #ffbd59 !important;
+    border-radius: 15px;
+    opacity: 0.9;
+    padding: 3px 15px 50px 15px;
+    margin-bottom: 50px;
+}

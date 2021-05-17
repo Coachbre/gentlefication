@@ -1,24 +1,39 @@
 .homePageView {
-    display: flex;
-    margin-top: 35px !important;
+    /* display: flex; */
+    margin-top: 10px !important;
     background-image: url('../images/backgrounds/neighbor1.jpg');
    background-repeat: no-repeat;
    background-size: cover;
    z-index: -1;
-   min-height: 500px;
+   /* min-height: 500px; */
    background-attachment: fixed;
    background-position: center;
 
 }
 
+.homePageContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.homePageSpacing {
+/* width: 4em;
+display: flex; */
+}
+
 .homeEvents {
-    float: left;
+    margin-top: 2em; 
+    margin-left: 4em;
 }
 
 .home-aside {
- 
-    margin-top: 6%; 
- margin-left: 20%;
+ display: flex;
+ justify-content: flex-end;
+ flex-direction: column;
+
+  margin-top: 2em; 
+ margin-right: 4em;
+ margin-left: 4em;
 
 }
 
