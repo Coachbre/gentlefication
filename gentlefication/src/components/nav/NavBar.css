@@ -1,8 +1,9 @@
 
   .navBar {
         height: 50px;
-   
+   /* background-color: #ddeaec; */
         text-decoration: none;
+        
   }
 
   .nav-item {

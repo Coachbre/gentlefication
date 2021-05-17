@@ -1,8 +1,19 @@
 .eventListHeader {
-    border-style: solid;
-    margin: 0px;
-    margin-bottom: 20px;
+ 
+}
+.eventList {
+    /* margin-left: 5%; */
+    margin-top: 4%;
+    float: left !important;
+}
 
+.eventCard {
+    padding: 15px 15px 30px 15px;
+    margin-bottom: 50px;
+    background-color: #ffbd59 !important;
+    border-radius: 15px;
+    opacity: 0.9;
+  
 }
 
 .saveButton, .deleteButton {
@@ -10,11 +21,15 @@
 }
 
 
-aside {
+.previewAside {
     width: 30%;
-    padding-left: 15px;
-    margin-left: 15px;
-    float: right;
+    /* padding-left: 15px; */
+ float: right;
+ 
+    
+    /* margin-top: 4%;  */
+ /* margin-left: 15%; */
+
  
   }
 

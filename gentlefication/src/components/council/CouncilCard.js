@@ -20,7 +20,7 @@ export const CouncilCard = ({council}) => (
     <section>
         <img className="memberImage" src={council.image} alt="council member headshot" />
     
-        <div className="memberHeader">
+        <div className="mainMemberHeader">
         <h2 className="memberName">{council.name} - {council.district.name}</h2>
         <Button className><a href={council.url}>Visit Website</a></Button>
         </div>

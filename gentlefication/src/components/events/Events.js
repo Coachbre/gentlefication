@@ -78,8 +78,7 @@ export const Events = () => {
     return (
         <>
             <div className="eventList">
-                <h1 className="eventListHeader">COME GET TO KNOW YOUR NEIGHBORS!</h1>
-                <div className="eventCard">
+               
                     {events.map(eventObj => {
 
                         let isDisabled = false
@@ -90,7 +89,7 @@ export const Events = () => {
                         if (savedItem) {
                             isDisabled = true
                         }
-                        console.log(isDisabled)
+                   
                         return (
 
 
@@ -107,10 +106,9 @@ export const Events = () => {
                         )
                     })}
 
-                </div>
 
             </div>
-            <aside>
+            <aside className="previewAside">
                 <h1 className="eventListHeader">YOUR SAVED EVENTS</h1>
 
                 {savedEvents.map(savedEventPreviewObj => {

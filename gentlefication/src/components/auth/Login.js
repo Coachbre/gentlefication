@@ -21,11 +21,6 @@ import Logo from "../../images/logo.png";
 
 
 
-
-
-
-
-
 export const Login = () => {
 
     const [loginUser, setLoginUser] = useState({ email: "" })
@@ -61,12 +56,6 @@ export const Login = () => {
             })
     }
 
-
-
-
-
-
-    
 
 
 

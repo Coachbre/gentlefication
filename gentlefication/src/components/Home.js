@@ -8,7 +8,8 @@ export const Home = () => {
     return (
         <>
             <section class="homePageView">
-
+            <div className="homePageContainer">
+                <div className="homePageSpacing"> </div>
                 <div className="homeEvents">
                     <SavedEvents />
                 </div>
@@ -19,6 +20,7 @@ export const Home = () => {
                     <OrgSpotLight />
                     </div>
                 </aside>
+                </div>
             </section>
         </>
     )
