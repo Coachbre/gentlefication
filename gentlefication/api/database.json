@@ -12,7 +12,6 @@
       "zipcode": 12345,
       "id": 8
     }
-    
   ],
   "organizations": [
     {
@@ -88,35 +87,23 @@
       "id": 2
     },
     {
-      "name": "Community Clean-up",
+      "name": "Game Show Mashup",
       "date": "6/02/2021",
-      "location": "the streets",
+      "location": "Virtual event",
       "organizationId": 1,
-      "description": "Stop littering campaign",
+      "description": "Tired of Netflix and Zoom happy hours? Join us for a Virtual Game Show Mashup! Connect with neighbors and participate in an exciting, fun-filled series of team games and mini challenges!",
       "id": 3
     },
     {
-      "name": "Block Party",
-      "date": "7/02/2021",
-      "location": "your neighborhood",
+      "name": "FreedomFest Block Party",
+      "date": "6/08/2021",
+      "location": "Springbrook Duck Pond",
       "organizationId": 3,
-      "description": "Party Hard with the next door neighbor",
+      "description": "The 40th annual FreedomFest is an early celebration of Independence Day hosted by the City of Knoxville. It is a free public event held the last Saturday in June, and features fireworks, food trucks, games and more!",
       "id": 4
     }
   ],
   "savedEvents": [
-    {
-      "id": 8,
-      "userId": 8,
-      "eventId": 1,
-      "notes": ""
-    },
-    {
-      "eventId": 1,
-      "userId": 9,
-      "notes": "",
-      "id": 11
-    },
     {
       "id": 13,
       "userId": 1,
@@ -133,7 +120,7 @@
       "id": 20,
       "userId": 8,
       "eventId": 3,
-      "notes": "trash trash"
+      "notes": "Check on registration deadline"
     },
     {
       "eventId": 4,
