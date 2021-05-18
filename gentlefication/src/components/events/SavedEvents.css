@@ -1,8 +1,5 @@
 .savedEventsList {
-    /* margin-right: 15%;
-    margin-top: 4%; */
- 
-    
+    margin-right: 15%;
 }
 
 .savedEventCard {
@@ -17,7 +14,6 @@
 .savedCardButtons {
     flex: auto;
     float: right;
-
 }
 
  .removeButton {
@@ -25,10 +21,21 @@
     margin-top: 10px !important;
 } 
 
+.savedPreviewHeader {
+    background-color: lavender;
+    text-align: center !important;
+}
+
 .savedPreviewCard {
     background-color: #ffbd59 !important;
     border-radius: 15px;
     opacity: 0.9;
     padding: 3px 15px 50px 15px;
     margin-bottom: 50px;
+    width: 18em;
+}
+
+.previewRemoveButton {
+    margin-top: 0.3em !important;
+    float: right !important;
 }

@@ -43,6 +43,6 @@ export const SavedPreview = ({ savedEventPreview, handleDelete }) => (
         <h2 className="name">{savedEventPreview.event.name} </h2>
         <div className="eventTime"> TIME: {savedEventPreview.event.date} at {savedEventPreview.event.time}</div>
         <div className="eventLocation"> LOCATION: {savedEventPreview.event.location}</div>
-        <Button className="deleteButton" type="button" onClick={() => handleDelete(savedEventPreview.id)}>REMOVE EVENT</Button>
+        <Button className="previewRemoveButton" type="button" onClick={() => handleDelete(savedEventPreview.id)}>REMOVE EVENT</Button>
     </section>
 )
