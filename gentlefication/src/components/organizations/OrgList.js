@@ -7,7 +7,7 @@ import { OrgCard } from './OrgCard';
 
 
 export const Orgs = () => {
-  
+
 
     const [orgs, setOrgs] = useState([]);
     const getOrgs = () => {
@@ -19,29 +19,30 @@ export const Orgs = () => {
     };
 
 
-  
+
 
     useEffect(() => {
         getOrgs();
     }, []);
     return (
+        <div className="orgPageView">
+            <div className="orgPageContainer">
+                <div className="orgList">
+                    {/* <h1 className="orgListHeader">ORGANIZATIONS & NONPROFITS</h1> */}
 
-        <div className="orgList">
-            <h1 className="orgListHeader">ORGANIZATIONS & NONPROFITS</h1>
-            <div className="orgCard">
-                {orgs.map(orgObj => {
-                    return (
+                    {orgs.map(orgObj => {
+                        return (
                             <OrgCard
                                 key={orgObj.id}
                                 //good convention
                                 org={orgObj}
                             //orgObj (each organization in array) is set equal to 'org'
                             />
-                    )
-                })}
-            </div>
-        
-        </div>
+                        )
+                    })}
+                </div>
 
+            </div>
+        </div>
     );
 };

@@ -19,7 +19,7 @@ import { Link } from "react-router-dom";
 
 export const OrgCard = ({ org }) => (
     // 'org' is a prop being passed in from OrgList()
-    <section>
+    <section className="orgCard">
 
         <Link to={`/organizations/events/${org.id}`}>
             <Button type="button" className="eventsButton">VIEW SCHEDULED EVENTS</Button>
@@ -34,7 +34,7 @@ export const OrgCard = ({ org }) => (
             <h3>CONTACT INFORMATION</h3>
             <div className="orgAddress"> {org.address}</div>
             <div className="orgPhone"> {org.phone}</div>
-            <Button className="orgwebsite"><a href={org.website}>Visit Website</a></Button>
+            <Button className="orgWebsiteButton"><a href={org.website}>Visit Website</a></Button>
         </div>
 
     </section>

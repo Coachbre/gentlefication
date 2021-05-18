@@ -22,8 +22,9 @@
 } 
 
 .savedPreviewHeader {
-    background-color: lavender;
+    background-color: #ddeaec;
     text-align: center !important;
+    border-radius: 15px;
 }
 
 .savedPreviewCard {
