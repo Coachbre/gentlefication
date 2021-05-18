@@ -1,5 +1,6 @@
 //shows selected organizations events
 import Button from '@material-ui/core/Button';
+import "../organizations/OrgEvents.css";
 
 import { React, useState, useEffect } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
@@ -17,43 +18,45 @@ export const EventsByOrg = () => {
     const getMatchingEvents = () => {
 
         return getOrgEventById(organizationId)
-        .then((response => {
-            setMatchingEvents(response)
-        }))
+            .then((response => {
+                setMatchingEvents(response)
+            }))
     }
     //write comment here 
 
     const handleBackToMain = () => {
         return history.push("/organizations")
     }
-    
+
     useEffect(() => {
         getMatchingEvents();
     }, []);
 
     return (
-        <div>
-            <h1 className="eventListHeader">EVENTS</h1>
-                <Button type="button" className="backButton" onClick={() => handleBackToMain()}>BACK TO RESOURCES</Button>
-            <div>
-                {matchingEvents.map(orgEventObj => {
-                    
-                    
-                    return (
-                    
-                                <OrgEventCard
-                                    key={orgEventObj.id}
-                                    //unique key used by react (not required, but good convention)
+        <div className="orgEventPageView">
+            <Button type="button" className="orgEventBackButton" onClick={() => handleBackToMain()}>BACK TO RESOURCES</Button>
+            <div className="orgEventPageContainer">
+                
+                <div className="orgEventsList">
+                    {matchingEvents.map(orgEventObj => {
 
-                                    event={orgEventObj}
-                                // savedEventObj (each saved event in the array) is now equal to 'savedEvent' (prop passed into SavedEventCard)
 
-                                />
-                     
+                        return (
+
+                            <OrgEventCard
+                                key={orgEventObj.id}
+                                //unique key used by react (not required, but good convention)
+
+                                event={orgEventObj}
+                            // savedEventObj (each saved event in the array) is now equal to 'savedEvent' (prop passed into SavedEventCard)
+
+                            />
+
                         )
-                    
 
-                })}
+
+                    })}
+                </div>
             </div>
         </div>
     )
