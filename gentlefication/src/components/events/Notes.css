@@ -1,0 +1,48 @@
+.notesPageView {
+    /* display: flex; */
+    margin-top: 10px !important;
+    background-image: url('../../images/backgrounds/party3.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   z-index: -1;
+   min-height: 1000px; 
+   background-attachment: fixed;
+   background-position: center;
+
+}
+
+.notesPageContainer {
+
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+}
+
+.notesFormHeader {
+    text-align: center;
+}
+
+.notesForm {
+    padding: 10em;
+    margin-bottom: 50px;
+    background-color: #ffbd59 !important;
+    border-radius: 15px;
+    opacity: 0.9;
+    width: 60em;
+
+}
+
+.form-control {
+border-style: none;
+padding: 2em;
+width: 70em;
+}
+
+.noteButtons {
+    margin-top: 1em;
+    float: right;
+}
+
+.note-update {
+    margin-top: 1em;
+}

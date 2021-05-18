@@ -27,7 +27,7 @@
 
 .councilMemberCard {
   justify-content: space-between;
-  padding: 15px 15px 15px 15px;
+  padding: 30px 15px 30px 30px;
     margin-bottom: 50px;
     background-color: #ffbd59 !important;
     border-radius: 15px;
@@ -37,6 +37,7 @@
 
 .memberName {
   padding: 1em;
+  align-content: center !important;
 }
 
 .memberImage {

@@ -11,6 +11,8 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
+import './Notes.css'
+
 
 import { useState, useEffect } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
@@ -28,7 +30,7 @@ export const NoteEdit = () => {
 
     const { savedEventId } = useParams();
     //pulls savedEventId (an integer) from the route in application views
-  
+
     const history = useHistory();
 
     const handleFieldChange = (event) => {
@@ -42,7 +44,7 @@ export const NoteEdit = () => {
 
         changedSavedEvent[event.target.id] = selectedVal;
         // value of changed task = user input
-       
+
         setSavedEvent(changedSavedEvent);
     };
 
@@ -69,51 +71,62 @@ export const NoteEdit = () => {
     }
 
     useEffect(() => {
-   
-    
+
+
         getSavedEventById(savedEventId)
             //fetch each savedEvent object by ID
             .then(response => {
-              
+
                 setSavedEvent(response);
                 //sets note equal to API reponse
                 setIsLoading(false);
                 //allows user submission
             });
-    }, [ 
+    }, [
         // savedEventId
-     ]);
+    ]);
     //passes in updated array of events + notes
 
- 
+
     return (
-   
-        <form className="noteEdit">
-            <h2 className="noteEditTitle">UPDATE EVENT NOTES</h2>
 
-            <fieldset>
-                <div>
-                    {/* <label htmlFor="notesName">{savedEvent.event.name}</label> */}
-                    <input
-                        type="text"
-                        id="notes"
-                        onChange={handleFieldChange}
-                        className="form-control"
-                        value={savedEvent.notes} />
-                </div>
-            </fieldset>
+        <div className="notesPageView">
+            <div className="notesPageContainer">
 
-            <Button type="button" disabled={isLoading} className="note-update" onClick={updateExistingSavedEvent} >
-                Update
-            </Button>
+                <form className="notesForm">
 
-            <div>
-               
-                    <Button type="button" className="cancel-note" onClick={handleCancel}>Cancel</Button>
-              
+                    <h1 className="notesFormHeader">UPDATE YOUR EVENT NOTES</h1>
+                    <fieldset>
+
+
+                        <input
+                            type="text"
+                            id="notes"
+                            onChange={handleFieldChange}
+                            className="form-control"
+                            value={savedEvent.notes} />
+
+                    </fieldset>
+
+                    <div className="noteButtons">
+
+                        <div className="cancel-note">
+                            <Button type="button" onClick={handleCancel}>Cancel</Button>
+                        </div>
+
+                        <div className="note-update">
+                            <Button type="button" disabled={isLoading} onClick={updateExistingSavedEvent} >
+                                Update
+                            </Button>
+                        </div>
+
+
+                    </div>
+
+
+                </form>
+
             </div>
-
-
-        </form>
+        </div>
     )
 }
