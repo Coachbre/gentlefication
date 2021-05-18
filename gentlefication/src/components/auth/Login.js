@@ -79,15 +79,15 @@ export const Login = () => {
 
 
     return (
-        
+    
         <body id="homeLoginPage">
 
 <div class="crossfade">
   <figure></figure>
+  {/* <figure></figure>
   <figure></figure>
   <figure></figure>
-  <figure></figure>
-  <figure></figure>
+  <figure></figure> */}
 </div>
 
         <main className="loginContainer">
@@ -148,6 +148,7 @@ export const Login = () => {
 
             </Container>
         </main>
+     
         </body>
     )
 }
