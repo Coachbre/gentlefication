@@ -23,10 +23,12 @@ export const SavedEventCard = ({ savedEvent, handleDelete }) => (
     <section className="savedEventCard">
 
         <h2 className="name">{savedEvent.event.name}</h2>
-        <div className="eventTime">DATE: {savedEvent.event.date}</div>
-        <div className="eventLocation">LOCATION: {savedEvent.event.location}</div>
-        <div className="eventDes">DESCRIPTION: {savedEvent.event.description}</div>
-        <div className="savedNotes">NOTES: {savedEvent.notes}</div>
+        <div className="savedEventMainDetails">
+            <div className="eventTime">DATE: {savedEvent.event.date}</div>
+            <div className="eventLocation">LOCATION: {savedEvent.event.location}</div>
+            <div className="eventDes">DESCRIPTION: {savedEvent.event.description}</div>
+            <div className="savedNotes">NOTES: {savedEvent.notes}</div>
+        </div>
         <div className="savedCardButtons">
             <Link to={`/savedEvents/edit/${savedEvent.id}`}>
                 <Button className="notesButton" type="button">ADD OR CHANGE YOUR NOTES</Button>
