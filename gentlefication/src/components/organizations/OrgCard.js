@@ -26,7 +26,7 @@ export const OrgCard = ({ org }) => (
           
         </Link>
 
-        <img className="orgImage" src={org.image} alt="Local organization image" />
+        <img className="orgImage" src={org.logo} alt="Local organization image" />
 
         <h2 className="orgName">{org.name} </h2>
         <div className="orgDes"> {org.description}</div>

@@ -12,7 +12,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Logo from "../../images/logo.png";
 
-import { React, useEffect, useState } from 'react';
+import { React } from 'react';
 import './OrgSpotlight.css'
 
 
@@ -23,13 +23,13 @@ export const SpotLightCard = ({ spotLight, refreshSpotLight }) => {
 
           
 
-                <p classname="spotLightHeader">
+                <div classname="spotLightHeader">
                     <h2>FEATURED ORGANIZATION</h2>
-                    <img className="orgImage" src={spotLight.image} alt="Local organization image" />
+                    <img className="orgImage" src={spotLight.logo} alt="Local organization image" />
                     <h3>
                         {spotLight.name}
                     </h3>
-                </p>
+                </div>
 
                 <p> {spotLight.description}</p>
                 <Button type="button" onClick={() => refreshSpotLight()}>VIEW NEXT</Button>

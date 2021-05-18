@@ -52,7 +52,7 @@
   "organizations": [
     {
       "name": "Knoxville Area Urban League",
-      "logo": "",
+      "logo": "../../images/organizations/KAUL.png",
       "description": "The Knoxville Area Urban League, an affiliate of the National Urban League, is dedicated to empowering communities and changing lives. Our mission is to enable African Americans, other minority groups and the underserved to secure economic self-reliance, parity, power and civil rights.",
       "address": "1514 E. Fifth Ave., Knoxville, TN",
       "phone": "865-524-5511",
@@ -61,7 +61,7 @@
     },
     {
       "name": "West shelter",
-      "logo": "",
+      "logo": "../../images/organizations/",
       "description": "Provides temporary accomadations to community members who lack stable housing",
       "address": "456 road blvd",
       "phone": "865-250-7770",
@@ -70,7 +70,7 @@
     },
     {
       "name": "Local food pantry",
-      "logo": "",
+      "logo": "../../images/organizations/",
       "description": "Serves Knoxville Area. Open to the public M-W with volunteer opportunities M-F",
       "address": "789 Texas Ave",
       "phone": "865-524-1458",
@@ -79,7 +79,7 @@
     },
     {
       "name": "Lynne Thompson Community Center",
-      "logo": "",
+      "logo": "../../images/organizations/",
       "description": "Community center is open m-f and provides tutoring, senior citizen events, and a local gym",
       "address": "789 Kingston Pike",
       "phone": "865-555-3214",
