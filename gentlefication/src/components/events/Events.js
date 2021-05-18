@@ -77,8 +77,10 @@ export const Events = () => {
     //initially runs with an empty array, then ^^ useEffect() runs after
     return (
         <>
-            <div className="eventList">
-               
+        <div className="eventsPageView">
+            <div className="eventsPageContainer">
+                <div className="eventList">
+
                     {events.map(eventObj => {
 
                         let isDisabled = false
@@ -89,7 +91,7 @@ export const Events = () => {
                         if (savedItem) {
                             isDisabled = true
                         }
-                   
+
                         return (
 
 
@@ -107,24 +109,26 @@ export const Events = () => {
                     })}
 
 
+                </div>
+                <aside className="previewAside">
+                    <h1 className="savedPreviewHeader">YOUR SAVED EVENTS</h1>
+                   
+                        {savedEvents.map(savedEventPreviewObj => {
+
+                            return (
+
+                                <SavedPreview
+                                    key={savedEventPreviewObj.id}
+                                    savedEventPreview={savedEventPreviewObj}
+                                    handleDelete={handleDelete}
+                                />
+
+
+                            )
+                        })}
+                </aside>
             </div>
-            <aside className="previewAside">
-                <h1 className="eventListHeader">YOUR SAVED EVENTS</h1>
-
-                {savedEvents.map(savedEventPreviewObj => {
-
-                    return (
-
-                        <SavedPreview
-                            key={savedEventPreviewObj.id}
-                            savedEventPreview={savedEventPreviewObj}
-                            handleDelete={handleDelete}
-                        />
-
-
-                    )
-                })}
-            </aside>
+            </div>
         </>
     );
 };

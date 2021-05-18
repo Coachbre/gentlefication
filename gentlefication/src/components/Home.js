@@ -9,7 +9,7 @@ export const Home = () => {
         <>
             <section class="homePageView">
             <div className="homePageContainer">
-                <div className="homePageSpacing"> </div>
+                {/* <div className="homePageSpacing"> </div> */}
                 <div className="homeEvents">
                     <SavedEvents />
                 </div>

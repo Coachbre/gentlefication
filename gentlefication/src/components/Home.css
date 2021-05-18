@@ -14,12 +14,9 @@
 .homePageContainer {
     display: flex;
     justify-content: space-evenly;
+    width:100%;
 }
 
-.homePageSpacing {
-/* width: 4em;
-display: flex; */
-}
 
 .homeEvents {
     margin-top: 2em; 

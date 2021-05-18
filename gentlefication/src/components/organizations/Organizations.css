@@ -2,3 +2,8 @@
 .eventsButton {
     float: right;
 }
+
+.orgImage {
+    width: 15em;
+    object-fit: contain;
+}

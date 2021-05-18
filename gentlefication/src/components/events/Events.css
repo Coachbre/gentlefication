@@ -1,10 +1,24 @@
-.eventListHeader {
- 
+.eventsPageView {
+       /* display: flex; */
+       margin-top: 10px !important;
+       background-image: url('../../images/backgrounds/neighbor8.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+      min-height: 500px; 
+      background-attachment: fixed;
+      background-position: center;
+   
+}
+
+.eventsPageContainer {
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
 }
 .eventList {
-    /* margin-left: 5%; */
-    margin-top: 4%;
-    float: left !important;
+    margin-top: 2em; 
+    margin-left: 4em;
 }
 
 .eventCard {
@@ -13,7 +27,7 @@
     background-color: #ffbd59 !important;
     border-radius: 15px;
     opacity: 0.9;
-  
+    width: 60em;
 }
 
 .saveButton, .deleteButton {
@@ -22,14 +36,12 @@
 
 
 .previewAside {
-    width: 30%;
-    /* padding-left: 15px; */
- float: right;
- 
-    
-    /* margin-top: 4%;  */
- /* margin-left: 15%; */
-
- 
+    /* display: flex; */
+    justify-content: flex-end;
+    flex-direction: column;
+     margin-top: 2em; 
+    margin-right: 4em;
+    margin-left: 4em;
+   
   }
 
