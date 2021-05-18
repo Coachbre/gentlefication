@@ -121,7 +121,7 @@ export const Register = () => {
                         <form className={classes.form} onSubmit={handleRegister}>
 
                             <Typography component="h1" variant="h5">
-                                Sign Up!
+                                {/* Sign Up! */}
                     </Typography>
 
                             <TextField

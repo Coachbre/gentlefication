@@ -147,16 +147,22 @@
       "id": 18
     },
     {
-      "id": 19,
-      "userId": 8,
-      "eventId": 2,
-      "notes": "this is a new note for an event"
-    },
-    {
       "id": 20,
       "userId": 8,
       "eventId": 3,
       "notes": "trash trash"
+    },
+    {
+      "eventId": 4,
+      "userId": 8,
+      "notes": "",
+      "id": 21
+    },
+    {
+      "eventId": 2,
+      "userId": 8,
+      "notes": "",
+      "id": 22
     }
   ],
   "councilMembers": [
