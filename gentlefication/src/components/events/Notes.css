@@ -1,5 +1,6 @@
 .notesPageView {
     /* display: flex; */
+    font-family: 'Farro', sans-serif;
     margin-top: 10px !important;
     background-image: url('../../images/backgrounds/party3.jpg');
    background-repeat: no-repeat;

@@ -95,7 +95,7 @@ export const NoteEdit = () => {
 
                 <form className="notesForm">
 
-                    <h1 className="notesFormHeader">UPDATE YOUR EVENT NOTES</h1>
+                    <h1 className="notesFormHeader">DON'T FORGET THE DETAILS!</h1>
                     <fieldset>
 
 
