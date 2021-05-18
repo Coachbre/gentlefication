@@ -7,47 +7,12 @@
       "id": 1
     },
     {
-      "email": "hi@hi.com",
-      "name": "hi hi",
-      "zipcode": 88888,
-      "id": 6
-    },
-    {
-      "email": "nala@dog.com",
-      "name": "Nala Coach",
-      "zipcode": 37701,
-      "id": 7
-    },
-    {
       "email": "user@user.com",
       "name": "user user",
       "zipcode": 12345,
       "id": 8
-    },
-    {
-      "email": "me@me.com",
-      "name": "me me",
-      "zipcode": 23456,
-      "id": 9
-    },
-    {
-      "email": "user2@user.com",
-      "name": "user2 user2",
-      "zipcode": 23456,
-      "id": 10
-    },
-    {
-      "email": "new@home.com",
-      "name": "new d",
-      "zipcode": 34567,
-      "id": 11
-    },
-    {
-      "email": "new2@new.com",
-      "name": "ffff ffff",
-      "zipcode": 34567,
-      "id": 12
     }
+    
   ],
   "organizations": [
     {
@@ -56,52 +21,70 @@
       "description": "The Knoxville Area Urban League, an affiliate of the National Urban League, is dedicated to empowering communities and changing lives. Our mission is to enable African Americans, other minority groups and the underserved to secure economic self-reliance, parity, power and civil rights.",
       "address": "1514 E. Fifth Ave., Knoxville, TN",
       "phone": "865-524-5511",
-      "website": "thekaul.com",
+      "website": "https://www.keepknoxvillebeautiful.org/",
       "id": 1
     },
     {
-      "name": "West shelter",
-      "logo": "../../images/organizations/",
-      "description": "Provides temporary accomadations to community members who lack stable housing",
-      "address": "456 road blvd",
-      "phone": "865-250-7770",
-      "website": "website.website",
+      "name": "Keep Knoxville Beautiful",
+      "logo": "../../images/organizations/KKB.png",
+      "description": "KKB was founded in 1978 as the Greater Knoxville Beautification Board (GKBB) to help clean up Knoxville before the 1982 World’s Fair. More than 40 years later, we’re dedicated as ever to making our county cleaner, greener and more beautiful.",
+      "address": "2743 Wimpole Ave. #B, Knoxville, TN",
+      "phone": "865-521-6957",
+      "website": "https://therestorationhouse.net/",
       "id": 2
     },
     {
-      "name": "Local food pantry",
-      "logo": "../../images/organizations/",
-      "description": "Serves Knoxville Area. Open to the public M-W with volunteer opportunities M-F",
-      "address": "789 Texas Ave",
-      "phone": "865-524-1458",
-      "website": "url.url",
+      "name": "Alliance for Better Nonprofits",
+      "logo": "../../images/organizations/AFBNP.png",
+      "description": "The Alliance for Better Nonprofits (ABN) provides East Tennessee nonprofits with support to accomplish their missions and increase their impact, ensuring all East Tennesseans across diverse communities, cultures, and generations can reach their full potential.",
+      "address": "318 N. Gay Street- Suite 203, Knoxville, TN",
+      "phone": "865-313-2077",
+      "website": "https://www.betternonprofits.org/",
       "id": 3
     },
     {
-      "name": "Lynne Thompson Community Center",
-      "logo": "../../images/organizations/",
-      "description": "Community center is open m-f and provides tutoring, senior citizen events, and a local gym",
-      "address": "789 Kingston Pike",
+      "name": "West Hills Community Association",
+      "logo": "../../images/organizations/WHCA.png",
+      "description": "West Hills is a neighborhood in Knoxville, Tennessee, United States, located just off Kingston Pike in West Knoxville.",
+      "address": "789 Kingston Pike, Knoxville, TN",
       "phone": "865-555-3214",
-      "website": "help.help",
+      "website": "https://www.westhillsknoxville.org/",
       "id": 4
+    },
+    {
+      "name": "The Restoration House",
+      "logo": "../../images/organizations/TRH.png",
+      "description": "The Restoration House (TRH) helps restore single mothers and their children back to God’s good intent for their lives. Through supportive transitional housing, ally teams, family advocacy, and youth development, TRH walks alongside low-income single-parent families, helping them break harmful cycles and regain hope and a future.",
+      "address": "2205 Village Place Way, Knoxville, TN",
+      "phone": "865-200-5406",
+      "website": "https://therestorationhouse.net/",
+      "id": 5
+    },
+    {
+      "name": "Alliance House Community Coalition",
+      "logo": "../../images/organizations/AHCC.png",
+      "description": "Serving as a social equity organization, we are committed to fulfilling the needs and services of the community and addressing racism as a public health crisis in the Knoxville community.",
+      "address": "3020 Martin Luther King Jr Ave- Suite 3, Knoxville, TN",
+      "phone": "865-332-2677",
+      "website": "https://www.alliancehousecc.org/",
+      "id": 6
     }
   ],
   "events": [
     {
-      "name": "Monthly East Ridge Neighborhood Association meeting",
+      "name": "Monthly West Hills Community Association meeting",
       "date": "5/20/2021",
-      "location": "community center",
+      "location": "Community Center",
       "organizationId": 4,
-      "description": "Community meeting to discuss upcoming local election",
+      "description": "Community meeting to discuss upcoming local elections",
       "id": 1
     },
     {
-      "name": "Basketball Tournament",
-      "date": "5/15/2021",
-      "location": "the courts",
-      "organizationId": 4,
-      "description": "3 on 3 championship game",
+      "name": "Shoes for School 2020: Takeout Edition",
+      "date": "5/25/2021",
+      "location": "Virtual Event",
+      "organizationId": 1,
+      "description": "Shoes for School is an annual back-to-school event that provides new shoes and school supplies for more than 1,500 area children. Each spring, we work with other non-profit agencies to help us identify and register children age 5-12 who most need the help. Purchasing shoes and school supplies for over 1,500 children is a big undertaking, but seeing the delight on the kids’ faces and knowing that providing these basic necessities helps them feel more comfortable and confident with their peers makes it all worthwhile.",
       "id": 2
     },
     {

@@ -1,9 +1,10 @@
+import "../organizations/OrgEvents.css"
 import React from 'react';
 
 
 
 export const OrgEventCard = ({event}) => (
-<section>
+<section className="orgEventCard">
          {/* <button type="button" className="saveButton" onClick={() => handleAddToList(event)}>Save</button> */}
         <h2 className="eventName">{event.name} </h2>
        {/* <div>HOSTED BY: {event.organization.name}</div> */}
