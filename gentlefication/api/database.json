@@ -82,7 +82,7 @@
       "name": "Shoes for School 2020: Takeout Edition",
       "date": "5/25/2021",
       "location": "Virtual Event",
-      "organizationId": 1,
+      "organizationId": 2,
       "description": "Shoes for School is an annual back-to-school event that provides new shoes and school supplies for more than 1,500 area children. Each spring, we work with other non-profit agencies to help us identify and register children age 5-12 who most need the help. Purchasing shoes and school supplies for over 1,500 children is a big undertaking, but seeing the delight on the kids’ faces and knowing that providing these basic necessities helps them feel more comfortable and confident with their peers makes it all worthwhile.",
       "id": 2
     },
@@ -101,6 +101,14 @@
       "organizationId": 3,
       "description": "The 40th annual FreedomFest is an early celebration of Independence Day hosted by the City of Knoxville. It is a free public event held the last Saturday in June, and features fireworks, food trucks, games and more!",
       "id": 4
+    },
+    {
+      "name": "First-time HomeBuyers Education Class",
+      "date": "6/08/2021",
+      "location": "Knoxville Area Urban League",
+      "organizationId": 1,
+      "description": "In order to qualify for any of THDA's mortgage loan programs, you must complete a course from an approved provider in your area. You’ll learn what questions to ask when looking for a home, how to qualify for a home loan, how to protect and maintain your home, and how to manage your money as a homeowner. You’ll also get to participate in a one-hour, one-on-one counseling session with a THDA-certified instructor.",
+      "id": 5
     }
   ],
   "savedEvents": [
@@ -120,19 +128,25 @@
       "id": 20,
       "userId": 8,
       "eventId": 3,
-      "notes": "Check on registration deadline"
-    },
-    {
-      "eventId": 4,
-      "userId": 8,
-      "notes": "",
-      "id": 21
+      "notes": "Check on team sign up deadlines"
     },
     {
       "eventId": 2,
       "userId": 8,
       "notes": "",
-      "id": 22
+      "id": 25
+    },
+    {
+      "eventId": 4,
+      "userId": 8,
+      "notes": "",
+      "id": 26
+    },
+    {
+      "eventId": 5,
+      "userId": 8,
+      "notes": "",
+      "id": 27
     }
   ],
   "councilMembers": [
