@@ -19,7 +19,7 @@
 }
 
 .memberList {
-  margin-top: 2em;
+  margin-top: 3em;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -27,7 +27,7 @@
 
 .councilMemberCard {
   justify-content: space-between;
-  padding: 15px 15px 15px 15px;
+  padding: 30px 15px 30px 30px;
     margin-bottom: 50px;
     background-color: #ffbd59 !important;
     border-radius: 15px;
@@ -35,6 +35,10 @@
     width: 20em;
 }
 
+.memberName {
+  padding: 1em;
+  align-content: center !important;
+}
 
 .memberImage {
   width: 120px;

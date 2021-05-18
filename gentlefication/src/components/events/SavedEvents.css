@@ -8,7 +8,7 @@
     background-color: #ffbd59 !important;
     border-radius: 15px;
     opacity: 0.9;
-    width: 60em;
+    width: 50em;
 }
 
 .savedCardButtons {
@@ -34,6 +34,10 @@
     padding: 3px 15px 50px 15px;
     margin-bottom: 50px;
     width: 18em;
+}
+
+.savedEventMainDetails {
+    padding-bottom: 1em;
 }
 
 .previewRemoveButton {
