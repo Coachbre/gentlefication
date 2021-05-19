@@ -125,28 +125,22 @@
       "id": 18
     },
     {
-      "id": 20,
-      "userId": 8,
-      "eventId": 3,
-      "notes": "Check on team sign up deadlines"
-    },
-    {
-      "eventId": 2,
+      "eventId": 5,
       "userId": 8,
       "notes": "",
-      "id": 25
+      "id": 27
     },
     {
       "eventId": 4,
       "userId": 8,
       "notes": "",
-      "id": 26
+      "id": 28
     },
     {
-      "eventId": 5,
+      "eventId": 3,
       "userId": 8,
       "notes": "",
-      "id": 27
+      "id": 29
     }
   ],
   "councilMembers": [
