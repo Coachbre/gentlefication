@@ -2,7 +2,8 @@
 
 For my front-end Capstone project at Nashville Software School- I built an app that assists both existing and new residents of gentrified neighborhoods by gathering community events, resources, and city council information into one central site. My app is meant to provide residents with an easy way to track and participate in events that make sure all community members benefit from the positive effects of gentrification, as well as foster a sense of community.
 
-I used React, HTML, CSS, and Material-UI to build each app view.
+## Tech Stack
+React, HTML, CSS, and Material-UI, and JSON server to build each app view.
 
 ## Installation
 git clone this repository
