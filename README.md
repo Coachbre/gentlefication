@@ -5,14 +5,13 @@ For my front-end Capstone project at Nashville Software School- I built an app t
 I used React, HTML, CSS, and Material-UI to build each app view.
 
 ## Installation
-git clone this repository or download zip
+git clone this repository
+run npm install in client directory
 
 ## Usage
 1. Run 'npm start' in the project's root directory  
 2. Navigate to the project's "API directory" and open: 'json-server -p 8088 -w database.json'
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+3. Use serve command (to recieve browser link) then copy and paste into browser
 
 ## Gentlefication Home Page
 ![gentleReadmeSnip](https://user-images.githubusercontent.com/62270575/118602154-54b86680-b780-11eb-9920-63c4250b4e22.PNG)
